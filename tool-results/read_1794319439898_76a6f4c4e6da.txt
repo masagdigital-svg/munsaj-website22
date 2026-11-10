@@ -1,0 +1,607 @@
+     1→<!DOCTYPE html>
+     2→<html lang="ar" dir="rtl" data-title-ar="منسج الرقمية | Mansaj Digital — نبني حضورك على الويب" data-title-en="Mansaj Digital | منسج الرقمية — We build your web presence">
+     3→<head>
+     4→  <meta charset="UTF-8">
+     5→  <meta name="viewport" content="width=device-width, initial-scale=1">
+     6→  <title>منسج الرقمية | Mansaj Digital — نبني حضورك على الويب</title>
+     7→  <meta name="description" content="نصمّم ونطوّر مواقع ومتاجر وتجارب رقمية تساعد عملاءك على فهم ما تقدمه والوصول إليك واتخاذ الخطوة التالية بسهولة. أكثر من 150 موقعًا خلال السنة الماضية.">
+     8→  <meta name="theme-color" content="#faf8f1" media="(prefers-color-scheme: light)">
+     9→  <meta name="theme-color" content="#0b2426" media="(prefers-color-scheme: dark)">
+    10→  <meta property="og:type" content="website">
+    11→  <meta property="og:title" content="منسج الرقمية | Mansaj Digital">
+    12→  <meta property="og:description" content="مشروعك يستحق موقعًا يعمل لأجله. مواقع تعريفية، متاجر، صفحات هبوط، ومواقع حجز — نبني حضورك على الويب.">
+    13→  <meta property="og:image" content="assets/images/og-image.jpg">
+    14→  <meta property="og:locale" content="ar_YE">
+    15→  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+    16→  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+    17→  <link rel="preconnect" href="https://fonts.googleapis.com">
+    18→  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    19→  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    20→  <link rel="stylesheet" href="css/style.css">
+    21→  <link rel="stylesheet" href="css/responsive.css">
+    22→  <script>
+    23→    (function () {
+    24→      var d = document.documentElement;
+    25→      d.classList.add("js");
+    26→      try {
+    27→        var t = localStorage.getItem("mansaj-theme");
+    28→        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    29→        if (t === "dark") d.classList.add("dark");
+    30→      } catch (e) {}
+    31→      try {
+    32→        var l = localStorage.getItem("mansaj-lang") || "ar";
+    33→        d.lang = l;
+    34→        d.dir = l === "ar" ? "rtl" : "ltr";
+    35→      } catch (e) {}
+    36→    })();
+    37→  </script>
+    38→</head>
+    39→<body>
+    40→  <a class="skip-link" href="#main" data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">تخطَّ إلى المحتوى</a>
+    41→
+    42→  <!-- ============ Header ============ -->
+    43→  <header class="site-header">
+    44→    <div class="container bar">
+    45→      <a href="index.html" class="brand-lockup" aria-label="منسج الرقمية — الرئيسية" data-ar-aria="منسج الرقمية — الرئيسية" data-en-aria="Mansaj Digital — Home">
+    46→        <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="36" height="36"></span>
+    47→        <span class="brand-word">
+    48→          <span class="brand-name" data-ar="منسج" data-en="Mansaj">منسج</span>
+    49→          <span class="brand-sub" data-ar="الرقمية · Digital" data-en="Digital · الرقمية">الرقمية · Digital</span>
+    50→        </span>
+    51→      </a>
+    52→      <nav class="header-nav" aria-label="التنقل الرئيسي" data-ar-aria="التنقل الرئيسي" data-en-aria="Main navigation">
+    53→        <ul>
+    54→          <li><a href="index.html" aria-current="page" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+    55→          <li><a href="about.html" data-ar="من نحن" data-en="About">من نحن</a></li>
+    56→          <li><a href="services.html" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+    57→          <li><a href="projects.html" data-ar="أعمالنا" data-en="Work">أعمالنا</a></li>
+    58→          <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+    59→        </ul>
+    60→      </nav>
+    61→      <div class="header-actions">
+    62→        <button class="btn btn-outline lang-toggle" type="button" aria-label="Switch to English" data-ar-aria="Switch to English" data-en-aria="التبديل إلى العربية">EN</button>
+    63→        <button class="btn btn-outline btn-icon theme-toggle" type="button" aria-label="تبديل المظهر بين الداكن والفاتح" data-ar-aria="تبديل المظهر بين الداكن والفاتح" data-en-aria="Toggle dark and light mode">
+    64→          <svg class="icon sun-i" aria-hidden="true"><use href="assets/icons/sprite.svg#i-sun"></use></svg>
+    65→          <svg class="icon moon-i" aria-hidden="true"><use href="assets/icons/sprite.svg#i-moon"></use></svg>
+    66→        </button>
+    67→        <a href="contact.html" class="btn btn-primary header-cta" data-ar="ابدأ مشروعك" data-en="Start your project">ابدأ مشروعك</a>
+    68→      </div>
+    69→    </div>
+    70→  </header>
+    71→
+    72→  <!-- ============ Floating nav dock ============ -->
+    73→  <nav class="dock" aria-label="القائمة العائمة" data-ar-aria="القائمة العائمة" data-en-aria="Floating menu">
+    74→    <div class="dock-panel">
+    75→      <button type="button" class="dock-btn sheet-open-btn" aria-label="فتح القائمة الكاملة" data-ar-aria="فتح القائمة الكاملة" data-en-aria="Open the full menu" aria-expanded="false" aria-controls="site-sheet">
+    76→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-menu"></use></svg>
+    77→        <span class="dock-tip" aria-hidden="true" data-ar="القائمة الكاملة" data-en="Full menu">القائمة الكاملة</span>
+    78→      </button>
+    79→      <span class="dock-sep" aria-hidden="true"></span>
+    80→      <a href="index.html" class="dock-btn" aria-current="page" aria-label="الرئيسية" data-ar-aria="الرئيسية" data-en-aria="Home">
+    81→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg>
+    82→        <span class="dock-tip" aria-hidden="true" data-ar="الرئيسية" data-en="Home">الرئيسية</span>
+    83→      </a>
+    84→      <a href="about.html" class="dock-btn" aria-label="من نحن" data-ar-aria="من نحن" data-en-aria="About">
+    85→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users"></use></svg>
+    86→        <span class="dock-tip" aria-hidden="true" data-ar="من نحن" data-en="About">من نحن</span>
+    87→      </a>
+    88→      <a href="services.html" class="dock-btn" aria-label="خدماتنا" data-ar-aria="خدماتنا" data-en-aria="Services">
+    89→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg>
+    90→        <span class="dock-tip" aria-hidden="true" data-ar="خدماتنا" data-en="Services">خدماتنا</span>
+    91→      </a>
+    92→      <a href="projects.html" class="dock-btn" aria-label="أعمالنا" data-ar-aria="أعمالنا" data-en-aria="Work">
+    93→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg>
+    94→        <span class="dock-tip" aria-hidden="true" data-ar="أعمالنا" data-en="Work">أعمالنا</span>
+    95→      </a>
+    96→      <a href="contact.html" class="dock-btn" aria-label="تواصل معنا" data-ar-aria="تواصل معنا" data-en-aria="Contact">
+    97→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+    98→        <span class="dock-tip" aria-hidden="true" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span>
+    99→      </a>
+   100→      <span class="dock-sep" aria-hidden="true"></span>
+   101→      <a href="contact.html" class="dock-btn cta" aria-label="ابدأ مشروعك الآن" data-ar-aria="ابدأ مشروعك الآن" data-en-aria="Start your project now">
+   102→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-square-pen"></use></svg>
+   103→        <span class="dock-tip" aria-hidden="true" data-ar="ابدأ مشروعك" data-en="Start your project">ابدأ مشروعك</span>
+   104→      </a>
+   105→    </div>
+   106→  </nav>
+   107→
+   108→  <!-- ============ Mobile sheet ============ -->
+   109→  <div class="sheet-overlay" aria-hidden="true"></div>
+   110→  <aside class="sheet" id="site-sheet" role="dialog" aria-modal="true" aria-hidden="true" aria-label="قائمة التنقل" data-ar-aria="قائمة التنقل" data-en-aria="Navigation menu">
+   111→    <div class="sheet-head">
+   112→      <span class="brand-lockup">
+   113→        <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="" width="36" height="36"></span>
+   114→        <span class="brand-word">
+   115→          <span class="brand-name" data-ar="منسج" data-en="Mansaj">منسج</span>
+   116→          <span class="brand-sub" data-ar="الرقمية · Digital" data-en="Digital · الرقمية">الرقمية · Digital</span>
+   117→        </span>
+   118→      </span>
+   119→      <button class="btn btn-outline btn-icon sheet-close" type="button" aria-label="إغلاق القائمة" data-ar-aria="إغلاق القائمة" data-en-aria="Close menu">
+   120→        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-x"></use></svg>
+   121→      </button>
+   122→    </div>
+   123→    <nav class="sheet-nav" aria-label="قائمة التنقل الكاملة" data-ar-aria="قائمة التنقل الكاملة" data-en-aria="Full navigation">
+   124→      <ul>
+   125→        <li><a href="index.html" aria-current="page"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg><span data-ar="الرئيسية" data-en="Home">الرئيسية</span><span class="num ltr">01</span></a></li>
+   126→        <li><a href="about.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users"></use></svg><span data-ar="من نحن" data-en="About">من نحن</span><span class="num ltr">02</span></a></li>
+   127→        <li><a href="services.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg><span data-ar="خدماتنا" data-en="Services">خدماتنا</span><span class="num ltr">03</span></a></li>
+   128→        <li><a href="projects.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg><span data-ar="أعمالنا" data-en="Work">أعمالنا</span><span class="num ltr">04</span></a></li>
+   129→        <li><a href="contact.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg><span data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span><span class="num ltr">05</span></a></li>
+   130→      </ul>
+   131→    </nav>
+   132→    <div class="sheet-foot">
+   133→      <a href="contact.html" class="btn btn-primary btn-block" data-ar="أريد موقعًا لمشروعي" data-en="I want a website">أريد موقعًا لمشروعي</a>
+   134→      <a class="wa-line" href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer">
+   135→        <svg class="icon icon-fill" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+   136→        <span data-ar="تواصل مباشر عبر واتساب" data-en="Chat on WhatsApp">تواصل مباشر عبر واتساب</span>
+   137→      </a>
+   138→      <a class="wa-line" href="mailto:masagdigital@gmail.com">
+   139→        <svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+   140→        <span data-ar="راسلنا عبر البريد" data-en="Email us">راسلنا عبر البريد</span>
+   141→      </a>
+   142→      <p class="brand-mini">
+   143→        <img src="assets/logos/mansaj-logo-mark-96.png" alt="" width="16" height="16">
+   144→        <span data-ar="وكالة منسج الرقمية" data-en="Mansaj Digital Agency">وكالة منسج الرقمية</span>
+   145→      </p>
+   146→    </div>
+   147→  </aside>
+   148→
+   149→  <main id="main">
+   150→    <!-- ============ Hero ============ -->
+   151→    <section class="hero" id="home" aria-label="الواجهة الرئيسية" data-ar-aria="الواجهة الرئيسية" data-en-aria="Hero">
+   152→      <div class="bg-blueprint" aria-hidden="true"></div>
+   153→      <div class="hero-accent-tr" aria-hidden="true">
+   154→        <svg class="mosaic mosaic-lg text-brand-soft" viewBox="0 0 5 4" shape-rendering="crispEdges">
+   155→          <rect x="0" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   156→          <rect x="4" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   157→          <rect x="1" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="1" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   158→          <rect x="3" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="3" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   159→          <rect x="2" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="2" y="2" width="0.92" height="0.92" fill="currentColor"/>
+   160→          <rect x="2" y="2" width="0.92" height="0.92" class="accent" fill="var(--brand)"/>
+   161→        </svg>
+   162→      </div>
+   163→      <div class="hero-accent-bl" aria-hidden="true">
+   164→        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+   165→      </div>
+   166→
+   167→      <div class="container hero-inner">
+   168→        <div class="hero-center reveal">
+   169→          <span class="hero-badge">
+   170→            <svg class="mosaic mosaic-xs" style="color:var(--brand)" viewBox="0 0 5 4" shape-rendering="crispEdges" aria-hidden="true">
+   171→              <rect x="0" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   172→              <rect x="4" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   173→              <rect x="1" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="1" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   174→              <rect x="3" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="3" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   175→              <rect x="2" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="2" y="2" width="0.92" height="0.92" fill="currentColor"/>
+   176→              <rect x="2" y="2" width="0.92" height="0.92" class="accent" fill="var(--brand)"/>
+   177→            </svg>
+   178→            <span data-ar="منسج الرقمية · نبني حضورك على الويب" data-en="Mansaj Digital · We build your web presence">منسج الرقمية · نبني حضورك على الويب</span>
+   179→          </span>
+   180→          <h1 data-ar="مشروعك يستحق موقعًا يعمل لأجله." data-en="Your project deserves a website that works for it.">مشروعك يستحق موقعًا يعمل لأجله.</h1>
+   181→          <p class="lead" data-ar="نصمّم ونطوّر مواقع ومتاجر وتجارب رقمية تساعد عملاءك على فهم ما تقدمه، والوصول إليك، واتخاذ الخطوة التالية بسهولة." data-en="We design and build websites, stores, and digital experiences that help your customers understand your offer, reach you, and take the next step easily.">نصمّم ونطوّر مواقع ومتاجر وتجارب رقمية تساعد عملاءك على فهم ما تقدمه، والوصول إليك، واتخاذ الخطوة التالية بسهولة.</p>
+   182→        </div>
+   183→
+   184→        <!-- The guiding question — two clear paths -->
+   185→        <div class="hero-paths-wrap reveal" style="--reveal-delay:.15s">
+   186→          <p class="hero-q" data-ar="ما الذي تريد أن تطوّره في مشروعك؟" data-en="What do you want to develop in your project?">ما الذي تريد أن تطوّره في مشروعك؟</p>
+   187→          <div class="hero-paths">
+   188→            <a class="path-card" href="contact.html" aria-label="أريد موقعًا لمشروعي — ابدأ طلب الخدمة" data-ar-aria="أريد موقعًا لمشروعي — ابدأ طلب الخدمة" data-en-aria="I want a website — start a request">
+   189→              <span class="path-icon"><svg class="icon" style="width:1.25rem;height:1.25rem" aria-hidden="true"><use href="assets/icons/sprite.svg#i-square-pen"></use></svg></span>
+   190→              <span class="path-title" data-ar="أريد موقعًا لمشروعي" data-en="I want a website for my project">أريد موقعًا لمشروعي</span>
+   191→              <span class="path-desc" data-ar="خطوات قصيرة تحدد خدمتك، ثم نجهّز لك رسالة واضحة لبدء التواصل." data-en="A few quick steps to define your service, then we prepare a clear message to start the conversation.">خطوات قصيرة تحدد خدمتك، ثم نجهّز لك رسالة واضحة لبدء التواصل.</span>
+   192→              <span class="path-link"><span data-ar="ابدأ الآن" data-en="Start now">ابدأ الآن</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+   193→            </a>
+   194→            <a class="path-card alt mirror" href="projects.html" aria-label="استكشف أعمال منسج — انتقل إلى المعرض" data-ar-aria="استكشف أعمال منسج — انتقل إلى المعرض" data-en-aria="Explore Mansaj work — go to portfolio">
+   195→              <span class="path-icon"><svg class="icon" style="width:1.25rem;height:1.25rem" aria-hidden="true"><use href="assets/icons/sprite.svg#i-compass"></use></svg></span>
+   196→              <span class="path-title" data-ar="أستكشف أعمال منسج" data-en="Explore Mansaj's work">أستكشف أعمال منسج</span>
+   197→              <span class="path-desc" data-ar="شاهد مشاريع نُفّذت لمجالات مختلفة، وتخيّل ما يناسب مشروعك." data-en="See projects delivered across different fields and imagine yours.">شاهد مشاريع نُفّذت لمجالات مختلفة، وتخيّل ما يناسب مشروعك.</span>
+   198→              <span class="path-link"><span data-ar="تصفّح الأعمال" data-en="Browse work">تصفّح الأعمال</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+   199→            </a>
+   200→          </div>
+   201→          <p class="hero-direct">
+   202→            <a href="contact.html" data-ar="أفضّل التواصل مباشرة" data-en="I prefer to get in touch directly">أفضّل التواصل مباشرة</a>
+   203→          </p>
+   204→        </div>
+   205→
+   206→        <!-- Showcase -->
+   207→        <div class="hero-showcase reveal" style="--reveal-delay:.22s">
+   208→          <figure class="show-figure ratio-main">
+   209→            <img class="ratio-main-img" src="assets/images/show-workspace.jpg" alt="مساحة عمل تصميم مواقع فيها شاشات تعرض نماذج مواقع حديثة" data-ar-alt="مساحة عمل تصميم مواقع فيها شاشات تعرض نماذج مواقع حديثة" data-en-alt="Web design workspace with screens showing modern website mockups" loading="eager" width="1152" height="612">
+   210→            <figcaption>
+   211→              <span data-ar="تصميم يظهر بأفضل شكل على كل الشاشات" data-en="Design that shines on every screen">تصميم يظهر بأفضل شكل على كل الشاشات</span>
+   212→              <svg class="mosaic mosaic-sm" style="color:var(--brand)" viewBox="0 0 5 4" shape-rendering="crispEdges" aria-hidden="true">
+   213→                <rect x="0" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   214→                <rect x="4" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   215→                <rect x="1" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="1" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   216→                <rect x="3" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="3" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   217→                <rect x="2" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="2" y="2" width="0.92" height="0.92" fill="currentColor"/>
+   218→                <rect x="2" y="2" width="0.92" height="0.92" class="accent" fill="var(--brand)"/>
+   219→              </svg>
+   220→            </figcaption>
+   221→          </figure>
+   222→          <div class="showcase-grid">
+   223→            <figure class="show-figure sub">
+   224→              <img src="assets/images/show-atelier.jpg" alt="طاولة تفصيل عليها حاسوب محمول يعرض تصميمًا رقميًا" data-ar-alt="طاولة تفصيل عليها حاسوب محمول يعرض تصميمًا رقميًا" data-en-alt="A tailor's desk with a laptop showing a digital design" loading="lazy" width="560" height="350">
+   225→              <figcaption><span data-ar="تفصيل يبدأ من طبيعة نشاطك" data-en="Tailored to how your business works">تفصيل يبدأ من طبيعة نشاطك</span></figcaption>
+   226→            </figure>
+   227→            <figure class="show-figure sub">
+   228→              <img src="assets/images/show-team.jpg" alt="فريق منسج يعمل معًا حول حاسوب محمول" data-ar-alt="فريق منسج يعمل معًا حول حاسوب محمول" data-en-alt="The Mansaj team working together around a laptop" loading="lazy" width="560" height="350">
+   229→              <figcaption><span data-ar="فريق يرافقك حتى التسليم" data-en="A team with you until delivery">فريق يرافقك حتى التسليم</span></figcaption>
+   230→            </figure>
+   231→          </div>
+   232→        </div>
+   233→
+   234→        <!-- Trust line -->
+   235→        <div class="trust-line reveal" style="--reveal-delay:.3s">
+   236→          <span class="item"><span class="dot" aria-hidden="true"></span><strong class="ltr">+150</strong>&nbsp;<span data-ar="موقع بُني خلال السنة الماضية" data-en="websites built last year">موقع بُني خلال السنة الماضية</span></span>
+   237→          <span class="vr" aria-hidden="true"></span>
+   238→          <span class="item"><span class="dot" aria-hidden="true"></span><strong class="ltr">150</strong>&nbsp;<span data-ar="عميل" data-en="clients">عميل</span></span>
+   239→          <span class="vr" aria-hidden="true"></span>
+   240→          <span class="item"><span class="dot" aria-hidden="true"></span><strong class="ltr">+1</strong>&nbsp;<span data-ar="سنة خبرة" data-en="year of experience">سنة خبرة</span></span>
+   241→        </div>
+   242→      </div>
+   243→    </section>
+   244→
+   245→    <!-- ============ Why a website ============ -->
+   246→    <section class="section" id="why-site" aria-label="لماذا يحتاج مشروعك إلى موقع" data-ar-aria="لماذا يحتاج مشروعك إلى موقع" data-en-aria="Why your project needs a website">
+   247→      <div class="container">
+   248→        <div class="why-grid">
+   249→          <div class="reveal">
+   250→            <div class="section-heading heading-less">
+   251→              <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="لماذا يحتاج مشروعك إلى موقع؟" data-en="Why does your project need a website?">لماذا يحتاج مشروعك إلى موقع؟</span></p>
+   252→              <h2 data-ar="لأن عملاءك يريدون أن يجدوا إجاباتهم بسهولة." data-en="Because your customers want to find their answers easily.">لأن عملاءك يريدون أن يجدوا إجاباتهم بسهولة.</h2>
+   253→              <p class="desc" data-ar="موقعك يمنح مشروعك مكانًا واضحًا يشرح خدماته، يعرض تفاصيله في أي وقت، ويجمع روابطه ومعلومات التواصل في تجربة واحدة. سواء كنت صاحب شركة أو متجر أو مطعم أو خدمة، يساعدك الموقع على تقديم مشروعك بشكل منظم ويسهّل على العميل معرفة الخطوة التالية." data-en="Your website gives your project a clear home that explains its services, shows its details at any time, and brings its links and contact information into one experience. Whether you run a company, a store, a restaurant, or a service, a website helps you present your business in an organized way and makes it easy for customers to know the next step.">موقعك يمنح مشروعك مكانًا واضحًا يشرح خدماته، يعرض تفاصيله في أي وقت، ويجمع روابطه ومعلومات التواصل في تجربة واحدة. سواء كنت صاحب شركة أو متجر أو مطعم أو خدمة، يساعدك الموقع على تقديم مشروعك بشكل منظم ويسهّل على العميل معرفة الخطوة التالية.</p>
+   254→            </div>
+   255→            <ul class="bullets">
+   256→              <li>
+   257→                <span class="b-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg></span>
+   258→                <p data-ar="اعرض خدماتك ومعلوماتك في مكان واحد تملكه وتتحكم بمحتواه." data-en="Present your services and information in one place you own and control.">اعرض خدماتك ومعلوماتك في مكان واحد تملكه وتتحكم بمحتواه.</p>
+   259→              </li>
+   260→              <li>
+   261→                <span class="b-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-clock"></use></svg></span>
+   262→                <p data-ar="اجعل تفاصيل مشروعك متاحة للزائر في أي وقت." data-en="Keep your project details available to visitors at any time.">اجعل تفاصيل مشروعك متاحة للزائر في أي وقت.</p>
+   263→              </li>
+   264→              <li>
+   265→                <span class="b-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg></span>
+   266→                <p data-ar="رتّب المنتجات أو العقارات أو الحجوزات بحسب طبيعة نشاطك." data-en="Arrange products, properties, or bookings around the nature of your business.">رتّب المنتجات أو العقارات أو الحجوزات بحسب طبيعة نشاطك.</p>
+   267→              </li>
+   268→              <li>
+   269→                <span class="b-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-message-square"></use></svg></span>
+   270→                <p data-ar="اجعل التواصل والطلب أوضح وأسهل من البحث بين منشورات متفرقة." data-en="Make contact and orders clearer and easier than searching through scattered posts.">اجعل التواصل والطلب أوضح وأسهل من البحث بين منشورات متفرقة.</p>
+   271→              </li>
+   272→            </ul>
+   273→            <div style="margin-top:2.25rem">
+   274→              <a href="services.html" class="btn btn-brand btn-lg" style="border-radius:0">
+   275→                <span data-ar="اكتشف الموقع المناسب لنشاطي" data-en="Discover the right website for my business">اكتشف الموقع المناسب لنشاطي</span>
+   276→                <svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg>
+   277→              </a>
+   278→            </div>
+   279→          </div>
+   280→
+   281→          <!-- CSS website mockup -->
+   282→          <div class="reveal" style="--reveal-delay:.12s">
+   283→            <div class="mockup" aria-hidden="true">
+   284→              <div class="mosaic-back"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+   285→              <figure class="phone-card">
+   286→                <span class="shot"><img src="assets/images/phone-site.jpg" alt="" loading="lazy" width="128" height="228"></span>
+   287→                <figcaption data-ar="يعمل على الجوال" data-en="Works on mobile">يعمل على الجوال</figcaption>
+   288→              </figure>
+   289→              <div class="browser">
+   290→                <div class="browser-bar">
+   291→                  <span class="dot-brand"></span><span class="dot-dim"></span>
+   292→                  <span class="line" style="margin-inline-start:.75rem;width:7rem;max-width:40%"></span>
+   293→                  <span class="line" style="margin-inline-start:auto;width:2rem"></span>
+   294→                </div>
+   295→                <div class="browser-head">
+   296→                  <span class="marks"><span class="m1"></span><span class="m2"></span></span>
+   297→                  <span class="nav-lines"><span></span><span></span><span></span></span>
+   298→                </div>
+   299→                <div class="browser-body">
+   300→                  <div class="mock-hero">
+   301→                    <span class="t1"></span><span class="t2"></span><span class="t3"></span>
+   302→                    <span class="btns"><span class="b1"></span><span class="b2"></span></span>
+   303→                  </div>
+   304→                  <div class="mock-cards">
+   305→                    <div class="mock-card"><span class="sq"></span><span class="l1"></span><span class="l2"></span></div>
+   306→                    <div class="mock-card alt"><span class="sq"></span><span class="l1"></span><span class="l2"></span></div>
+   307→                    <div class="mock-card"><span class="sq"></span><span class="l1"></span><span class="l2"></span></div>
+   308→                  </div>
+   309→                  <div class="mock-foot">
+   310→                    <span class="dot"></span><span class="l" style="width:8rem"></span><span class="l" style="margin-inline-start:auto;width:2.5rem"></span>
+   311→                  </div>
+   312→                </div>
+   313→              </div>
+   314→            </div>
+   315→          </div>
+   316→        </div>
+   317→      </div>
+   318→    </section>
+   319→
+   320→    <!-- ============ Why Mansaj + honest stats ============ -->
+   321→    <section class="section" id="why-mansaj" aria-label="لماذا منسج" data-ar-aria="لماذا منسج" data-en-aria="Why Mansaj" style="padding-bottom:0">
+   322→      <div class="container">
+   323→        <div class="section-heading reveal">
+   324→          <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="لماذا منسج؟" data-en="Why Mansaj?">لماذا منسج؟</span></p>
+   325→          <h2 data-ar="لا نبني صفحات فقط؛ نبني تجربة تناسب هدف مشروعك." data-en="We don't just build pages; we build an experience that fits your project's goal.">لا نبني صفحات فقط؛ نبني تجربة تناسب هدف مشروعك.</h2>
+   326→          <p class="desc" data-ar="في منسج نبدأ من احتياج النشاط، ثم نختار نوع الموقع والمحتوى والوظائف التي تخدمه. نركز على وضوح التجربة وسهولة استخدامها على الهاتف، ونرافقك بخطوات متفق عليها من بداية المشروع حتى التسليم." data-en="At Mansaj we start from what your business needs, then choose the website type, content, and features that serve it. We focus on a clear experience that is easy to use on the phone, and we walk with you through agreed steps from the start of the project until delivery.">في منسج نبدأ من احتياج النشاط، ثم نختار نوع الموقع والمحتوى والوظائف التي تخدمه. نركز على وضوح التجربة وسهولة استخدامها على الهاتف، ونرافقك بخطوات متفق عليها من بداية المشروع حتى التسليم.</p>
+   327→        </div>
+   328→        <figure class="figure-banner reveal" style="--reveal-delay:.1s;margin-bottom:2.5rem">
+   329→          <div class="img-wrap">
+   330→            <img src="assets/images/dev-work.jpg" alt="مطوّرة تبني موقعًا على حاسوبها المحمول" data-ar-alt="مطوّرة تبني موقعًا على حاسوبها المحمول" data-en-alt="A developer building a website on her laptop" loading="lazy" width="1152" height="648">
+   331→          </div>
+   332→          <figcaption data-ar="من الفكرة إلى التنفيذ — بخطوات واضحة ومتفق عليها" data-en="From the idea to the implementation — clear, agreed steps">من الفكرة إلى التنفيذ — بخطوات واضحة ومتفق عليها</figcaption>
+   333→        </figure>
+   334→      </div>
+   335→
+   336→      <div class="stats-band">
+   337→        <div class="bg-blueprint" aria-hidden="true"></div>
+   338→        <div class="container inner">
+   339→          <div class="stats-grid">
+   340→            <div class="stat-card reveal">
+   341→              <span class="dot" aria-hidden="true"></span>
+   342→              <p class="value ltr" data-count="150" data-suffix="+">150+</p>
+   343→              <p class="label" data-ar="موقع بُني خلال السنة الماضية" data-en="websites built last year">موقع بُني خلال السنة الماضية</p>
+   344→            </div>
+   345→            <div class="stat-card reveal" style="--reveal-delay:.08s">
+   346→              <span class="dot" aria-hidden="true"></span>
+   347→              <p class="value ltr" data-count="150">150</p>
+   348→              <p class="label" data-ar="عميل خلال السنة الماضية" data-en="clients last year">عميل خلال السنة الماضية</p>
+   349→            </div>
+   350→            <div class="stat-card reveal" style="--reveal-delay:.16s">
+   351→              <span class="dot" aria-hidden="true"></span>
+   352→              <p class="value ltr" data-count="1" data-suffix="+">1+</p>
+   353→              <p class="label" data-ar="سنة خبرة" data-en="year of experience">سنة خبرة</p>
+   354→            </div>
+   355→            <div class="stat-card reveal" style="--reveal-delay:.24s">
+   356→              <span class="dot" aria-hidden="true"></span>
+   357→              <p class="value ltr" data-count="356">356</p>
+   358→              <p class="label" data-ar="ساعة عمل فعلية" data-en="actual working hours">ساعة عمل فعلية</p>
+   359→            </div>
+   360→          </div>
+   361→        </div>
+   362→      </div>
+   363→    </section>
+   364→
+   365→    <!-- ============ Services preview ============ -->
+   366→    <section class="section" id="services" aria-label="خدمات منسج" data-ar-aria="خدمات منسج" data-en-aria="Mansaj services">
+   367→      <div class="container">
+   368→        <div class="section-heading reveal">
+   369→          <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="الخدمات" data-en="Services">الخدمات</span></p>
+   370→          <h2 data-ar="اختر ما يحتاجه مشروعك، لا ما يبدو رائجًا فقط." data-en="Choose what your project needs, not just what looks trendy.">اختر ما يحتاجه مشروعك، لا ما يبدو رائجًا فقط.</h2>
+   371→          <p class="desc" data-ar="لكل نشاط احتياجات مختلفة. استكشف الخدمات، ثم أخبرنا عن مشروعك لنساعدك في تحديد نقطة البداية." data-en="Every business has different needs. Explore the services, then tell us about your project so we can help you find the right starting point.">لكل نشاط احتياجات مختلفة. استكشف الخدمات، ثم أخبرنا عن مشروعك لنساعدك في تحديد نقطة البداية.</p>
+   372→        </div>
+   373→
+   374→        <div class="cards-grid services-grid">
+   375→          <article class="service-card reveal">
+   376→            <div class="head">
+   377→              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-building-2"></use></svg></span>
+   378→              <h3 data-ar="مواقع تعريفية للشركات والأنشطة" data-en="Corporate & business websites">مواقع تعريفية للشركات والأنشطة</h3>
+   379→            </div>
+   380→            <p class="s-desc" data-ar="عرّف بخدماتك وفريقك ومعلوماتك المهمة في موقع واضح يعكس هوية نشاطك." data-en="Introduce your services, team, and key information in a clear website that reflects your identity.">عرّف بخدماتك وفريقك ومعلوماتك المهمة في موقع واضح يعكس هوية نشاطك.</p>
+   381→            <div class="s-action"><a href="contact.html?service=corporate" class="btn"><span data-ar="أريد هذه الخدمة" data-en="I want this service">أريد هذه الخدمة</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></a></div>
+   382→          </article>
+   383→          <article class="service-card reveal" style="--reveal-delay:.08s">
+   384→            <div class="head">
+   385→              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-shopping-bag"></use></svg></span>
+   386→              <h3 data-ar="متاجر إلكترونية" data-en="Online stores">متاجر إلكترونية</h3>
+   387→            </div>
+   388→            <p class="s-desc" data-ar="اعرض منتجاتك بطريقة مرتبة، وسهّل على عملائك اكتشافها والوصول إلى تفاصيلها." data-en="Present your products in an organized way and make them easy to discover.">اعرض منتجاتك بطريقة مرتبة، وسهّل على عملائك اكتشافها والوصول إلى تفاصيلها.</p>
+   389→            <div class="s-action"><a href="contact.html?service=store" class="btn"><span data-ar="أريد هذه الخدمة" data-en="I want this service">أريد هذه الخدمة</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></a></div>
+   390→          </article>
+   391→          <article class="service-card reveal" style="--reveal-delay:.16s">
+   392→            <div class="head">
+   393→              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-credit-card"></use></svg></span>
+   394→              <h3 data-ar="متاجر مع بوابات دفع" data-en="Stores with payment gateways">متاجر مع بوابات دفع</h3>
+   395→            </div>
+   396→            <p class="s-desc" data-ar="متجر يتيح عرض المنتجات وإتمام الدفع عبر خيارات الدفع التي يدعمها المشروع والبلد." data-en="A store that supports product display and checkout via the payment options available in your country.">متجر يتيح عرض المنتجات وإتمام الدفع عبر خيارات الدفع التي يدعمها المشروع والبلد.</p>
+   397→            <div class="s-action"><a href="contact.html?service=store-payment" class="btn"><span data-ar="أريد هذه الخدمة" data-en="I want this service">أريد هذه الخدمة</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></a></div>
+   398→          </article>
+   399→          <article class="service-card reveal" style="--reveal-delay:.24s">
+   400→            <div class="head">
+   401→              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mouse-pointer-click"></use></svg></span>
+   402→              <h3 data-ar="صفحات هبوط للحملات والخدمات" data-en="Landing pages">صفحات هبوط للحملات والخدمات</h3>
+   403→            </div>
+   404→            <p class="s-desc" data-ar="صفحة مركّزة تشرح عرضك أو حملتك وتوجّه الزائر إلى إجراء محدد." data-en="A focused page that explains your offer or campaign and drives one clear action.">صفحة مركّزة تشرح عرضك أو حملتك وتوجّه الزائر إلى إجراء محدد.</p>
+   405→            <div class="s-action"><a href="contact.html?service=landing" class="btn"><span data-ar="أريد هذه الخدمة" data-en="I want this service">أريد هذه الخدمة</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></a></div>
+   406→          </article>
+   407→          <article class="service-card reveal" style="--reveal-delay:.32s">
+   408→            <div class="head">
+   409→              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-user-round"></use></svg></span>
+   410→              <h3 data-ar="مواقع شخصية ومعارض أعمال" data-en="Personal sites & portfolios">مواقع شخصية ومعارض أعمال</h3>
+   411→            </div>
+   412→            <p class="s-desc" data-ar="قدّم خبرتك ومشاريعك بطريقة احترافية تسهّل على المهتمين التعرف إليك والتواصل معك." data-en="Present your expertise and projects professionally so the right people reach out.">قدّم خبرتك ومشاريعك بطريقة احترافية تسهّل على المهتمين التعرف إليك والتواصل معك.</p>
+   413→            <div class="s-action"><a href="contact.html?service=personal" class="btn"><span data-ar="أريد هذه الخدمة" data-en="I want this service">أريد هذه الخدمة</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></a></div>
+   414→          </article>
+   415→          <article class="service-card reveal" style="--reveal-delay:.4s">
+   416→            <div class="head">
+   417→              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-landmark"></use></svg></span>
+   418→              <h3 data-ar="مواقع عقارية" data-en="Real estate websites">مواقع عقارية</h3>
+   419→            </div>
+   420→            <p class="s-desc" data-ar="نظّم العقارات وتفاصيلها، وسهّل على الزوار استكشاف الخيارات والتواصل بشأنها." data-en="Organize listings and details so visitors can explore options and get in touch.">نظّم العقارات وتفاصيلها، وسهّل على الزوار استكشاف الخيارات والتواصل بشأنها.</p>
+   421→            <div class="s-action"><a href="contact.html?service=realty" class="btn"><span data-ar="أريد هذه الخدمة" data-en="I want this service">أريد هذه الخدمة</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></a></div>
+   422→          </article>
+   423→        </div>
+   424→
+   425→        <div class="reveal" style="margin-top:2rem">
+   426→          <a href="services.html" class="btn btn-outline btn-lg">
+   427→            <span data-ar="استعرض جميع الخدمات" data-en="View all services">استعرض جميع الخدمات</span>
+   428→            <svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg>
+   429→          </a>
+   430→        </div>
+   431→      </div>
+   432→    </section>
+   433→
+   434→    <!-- ============ Portfolio preview ============ -->
+   435→    <section class="section" id="portfolio" aria-label="أعمال منسج" data-ar-aria="أعمال منسج" data-en-aria="Mansaj's work" style="padding-top:0">
+   436→      <div class="container">
+   437→        <div class="section-heading reveal">
+   438→          <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="أعمال منسج" data-en="Mansaj's work">أعمال منسج</span></p>
+   439→          <h2 data-ar="مشاريع منسج على أرض الواقع" data-en="Mansaj projects in the real world">مشاريع منسج على أرض الواقع</h2>
+   440→          <p class="desc" data-ar="تصفّح نماذج من المواقع التي طوّرناها لمجالات مختلفة، واضغط «معاينة الموقع» لتفتح الموقع الحقيقي وتجرّبه بنفسك." data-en="Browse a selection of the websites we built for different fields. Hit “Preview website” to open the live site and try it yourself.">تصفّح نماذج من المواقع التي طوّرناها لمجالات مختلفة، واضغط «معاينة الموقع» لتفتح الموقع الحقيقي وتجرّبه بنفسك.</p>
+   441→        </div>
+   442→
+   443→        <div class="cards-grid services-grid">
+   444→          <article class="project-card reveal" data-category="restaurants" data-url="https://alhamraa.netlify.app/">
+   445→            <div class="banner">
+   446→              <img src="assets/images/cat-restaurants.jpg" alt="أطباق مشويات على مائدة مطعم" data-ar-alt="أطباق مشويات على مائدة مطعم" data-en-alt="Grilled dishes served at a restaurant table" loading="lazy" width="560" height="320">
+   447→              <span class="no-badge ltr">01</span>
+   448→              <span class="cat-badge" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+   449→            </div>
+   450→            <div class="body">
+   451→              <h3 data-ar="مشويات الحمراء" data-en="Al-Hamra Grills">مشويات الحمراء</h3>
+   452→              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+   453→              <a class="preview-btn" href="https://alhamraa.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مشويات الحمراء في نافذة جديدة" data-ar-aria="معاينة موقع مشويات الحمراء في نافذة جديدة" data-en-aria="Preview the Al-Hamra Grills website in a new tab">
+   454→                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+   455→                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+   456→              </a>
+   457→            </div>
+   458→            <a class="cover-btn" href="projects.html" aria-label="عرض مشروع مشويات الحمراء في صفحة الأعمال" data-ar-aria="عرض مشروع مشويات الحمراء في صفحة الأعمال" data-en-aria="Open the Al-Hamra Grills project in the work page"></a>
+   459→          </article>
+   460→
+   461→          <article class="project-card reveal" style="--reveal-delay:.08s" data-category="legal" data-url="https://aishalaw.netlify.app/">
+   462→            <div class="banner">
+   463→              <img src="assets/images/cat-legal.jpg" alt="ميزان العدالة وكتب قانونية في مكتب محاماة" data-ar-alt="ميزان العدالة وكتب قانونية في مكتب محاماة" data-en-alt="Scales of justice and law books in a law office" loading="lazy" width="560" height="320">
+   464→              <span class="no-badge ltr">02</span>
+   465→              <span class="cat-badge" data-ar="مكاتب وقانونية" data-en="Legal offices">مكاتب وقانونية</span>
+   466→            </div>
+   467→            <div class="body">
+   468→              <h3 data-ar="مكتب المحامية عائشة محمد الصيعري" data-en="Law Office of Aisha Mohammed Al-Sayari">مكتب المحامية عائشة محمد الصيعري</h3>
+   469→              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+   470→              <a class="preview-btn" href="https://aishalaw.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مكتب المحامية عائشة محمد الصيعري في نافذة جديدة" data-ar-aria="معاينة موقع مكتب المحامية عائشة محمد الصيعري في نافذة جديدة" data-en-aria="Preview the Law Office of Aisha Mohammed Al-Sayari website in a new tab">
+   471→                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+   472→                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+   473→              </a>
+   474→            </div>
+   475→            <a class="cover-btn" href="projects.html" aria-label="عرض مشروع مكتب المحامية عائشة في صفحة الأعمال" data-ar-aria="عرض مشروع مكتب المحامية عائشة في صفحة الأعمال" data-en-aria="Open the Law Office of Aisha project in the work page"></a>
+   476→          </article>
+   477→
+   478→          <article class="project-card reveal" style="--reveal-delay:.16s" data-category="realty" data-url="https://nebrasestate.netlify.app/">
+   479→            <div class="banner">
+   480→              <img src="assets/images/cat-realty.jpg" alt="شرفة عقار مطلة على أفق المدينة" data-ar-alt="شرفة عقار مطلة على أفق المدينة" data-en-alt="A real-estate terrace overlooking the city skyline" loading="lazy" width="560" height="320">
+   481→              <span class="no-badge ltr">04</span>
+   482→              <span class="cat-badge" data-ar="عقارات" data-en="Real estate">عقارات</span>
+   483→            </div>
+   484→            <div class="body">
+   485→              <h3 data-ar="نبراس المدينة للعقار" data-en="Nibras Al-Madinah Real Estate">نبراس المدينة للعقار</h3>
+   486→              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+   487→              <a class="preview-btn" href="https://nebrasestate.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع نبراس المدينة للعقار في نافذة جديدة" data-ar-aria="معاينة موقع نبراس المدينة للعقار في نافذة جديدة" data-en-aria="Preview the Nibras Al-Madinah Real Estate website in a new tab">
+   488→                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+   489→                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+   490→              </a>
+   491→            </div>
+   492→            <a class="cover-btn" href="projects.html" aria-label="عرض مشروع نبراس المدينة في صفحة الأعمال" data-ar-aria="عرض مشروع نبراس المدينة في صفحة الأعمال" data-en-aria="Open the Nibras Al-Madinah project in the work page"></a>
+   493→          </article>
+   494→        </div>
+   495→
+   496→        <div class="reveal" style="margin-top:2rem">
+   497→          <a href="projects.html" class="btn btn-outline btn-lg">
+   498→            <span data-ar="عرض جميع الأعمال" data-en="View all work">عرض جميع الأعمال</span>
+   499→            <svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg>
+   500→          </a>
+   501→        </div>
+   502→      </div>
+   503→    </section>
+   504→
+   505→    <!-- ============ Contact CTA ============ -->
+   506→    <section class="section" id="contact" aria-label="تواصل مع منسج" data-ar-aria="تواصل مع منسج" data-en-aria="Contact Mansaj" style="padding-top:0">
+   507→      <div class="container">
+   508→        <div class="cta-panel reveal">
+   509→          <div class="bg-blueprint" aria-hidden="true"></div>
+   510→          <svg class="mosaic mosaic-md panel-mark" viewBox="0 0 5 4" shape-rendering="crispEdges" aria-hidden="true">
+   511→            <rect x="0" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="0" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   512→            <rect x="4" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="2" width="0.92" height="0.92" fill="currentColor"/><rect x="4" y="3" width="0.92" height="0.92" fill="currentColor"/>
+   513→            <rect x="1" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="1" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   514→            <rect x="3" y="0" width="0.92" height="0.92" fill="currentColor"/><rect x="3" y="1" width="0.92" height="0.92" fill="currentColor"/>
+   515→            <rect x="2" y="1" width="0.92" height="0.92" fill="currentColor"/><rect x="2" y="2" width="0.92" height="0.92" fill="currentColor"/>
+   516→            <rect x="2" y="2" width="0.92" height="0.92" class="accent" fill="var(--brand)"/>
+   517→          </svg>
+   518→          <h2 data-ar="جاهز تطوّر حضور مشروعك؟" data-en="Ready to develop your project's presence?">جاهز تطوّر حضور مشروعك؟</h2>
+   519→          <p class="panel-desc" data-ar="اختر نوع الخدمة، وأخبرنا ببعض التفاصيل، وسنجهّز لك رسالة واضحة لبدء التواصل مع وكالة منسج مباشرة عبر واتساب." data-en="Pick your service type, tell us a few details, and we'll prepare a clear message to start the conversation with the Mansaj agency directly on WhatsApp.">اختر نوع الخدمة، وأخبرنا ببعض التفاصيل، وسنجهّز لك رسالة واضحة لبدء التواصل مع وكالة منسج مباشرة عبر واتساب.</p>
+   520→          <div class="panel-actions">
+   521→            <a href="contact.html" class="btn btn-brand btn-lg" style="border-radius:.25rem;padding-inline:1.75rem">
+   522→              <span data-ar="ابدأ باختيار الخدمة" data-en="Start by choosing a service">ابدأ باختيار الخدمة</span>
+   523→            </a>
+   524→            <a href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="border-radius:.25rem;border:1px solid color-mix(in srgb, var(--deep-foreground) 30%, transparent);color:var(--deep-foreground)">
+   525→              <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+   526→              <span data-ar="واتساب الوكالة مباشرة" data-en="WhatsApp the agency directly">واتساب الوكالة مباشرة</span>
+   527→            </a>
+   528→          </div>
+   529→          <p class="panel-note" data-ar="لا تعرف أي خدمة تناسبك؟ اختر «ساعدوني في الاختيار» في نموذج الطلب." data-en="Not sure which service fits? Choose “Help me choose” in the request form.">لا تعرف أي خدمة تناسبك؟ اختر «ساعدوني في الاختيار» في نموذج الطلب.</p>
+   530→        </div>
+   531→      </div>
+   532→    </section>
+   533→  </main>
+   534→
+   535→  <!-- ============ Footer ============ -->
+   536→  <footer class="site-footer">
+   537→    <div class="container footer-grid">
+   538→      <div class="footer-brand">
+   539→        <span class="brand-lockup">
+   540→          <span class="logo-plate lg"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="44" height="44"></span>
+   541→          <span class="brand-word">
+   542→            <span class="brand-name" data-ar="منسج الرقمية" data-en="Mansaj Digital">منسج الرقمية</span>
+   543→            <span class="brand-sub ltr" data-ar="Mansaj Digital" data-en="منسج الرقمية">Mansaj Digital</span>
+   544→          </span>
+   545→        </span>
+   546→        <p class="tagline" data-ar="مشروعك يستحق موقعًا يعمل لأجله." data-en="Your project deserves a website that works for it.">مشروعك يستحق موقعًا يعمل لأجله.</p>
+   547→      </div>
+   548→
+   549→      <nav class="footer-col" aria-label="روابط الأقسام" data-ar-aria="روابط الأقسام" data-en-aria="Section links">
+   550→        <p class="col-title" data-ar="أقسام الموقع" data-en="Site sections">أقسام الموقع</p>
+   551→        <ul>
+   552→          <li><a href="index.html"><span class="dot" aria-hidden="true"></span><span data-ar="الرئيسية" data-en="Home">الرئيسية</span></a></li>
+   553→          <li><a href="about.html"><span class="dot" aria-hidden="true"></span><span data-ar="من نحن" data-en="About">من نحن</span></a></li>
+   554→          <li><a href="services.html"><span class="dot" aria-hidden="true"></span><span data-ar="خدماتنا" data-en="Services">خدماتنا</span></a></li>
+   555→          <li><a href="projects.html"><span class="dot" aria-hidden="true"></span><span data-ar="أعمالنا" data-en="Work">أعمالنا</span></a></li>
+   556→          <li><a href="contact.html"><span class="dot" aria-hidden="true"></span><span data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span></a></li>
+   557→        </ul>
+   558→      </nav>
+   559→
+   560→      <div class="footer-col">
+   561→        <p class="col-title" data-ar="تواصل" data-en="Contact">تواصل</p>
+   562→        <ul class="footer-contact">
+   563→          <li>
+   564→            <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+   565→            <div>
+   566→              <p class="fc-title" data-ar="وكالة منسج الرقمية — التواصل الرسمي" data-en="Mansaj Digital Agency — Official contact">وكالة منسج الرقمية — التواصل الرسمي</p>
+   567→              <a class="fc-phone ltr" href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer" aria-label="واتساب وكالة منسج الرقمية +967 770 233 292" data-ar-aria="واتساب وكالة منسج الرقمية +967 770 233 292" data-en-aria="WhatsApp Mansaj Digital Agency +967 770 233 292">+967 770 233 292</a>
+   568→            </div>
+   569→          </li>
+   570→          <li>
+   571→            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-phone"></use></svg>
+   572→            <div>
+   573→              <p class="fc-title" data-ar="اتصال مباشر" data-en="Direct call">اتصال مباشر</p>
+   574→              <a class="fc-phone ltr" href="tel:+967770233292" aria-label="اتصال وكالة منسج الرقمية +967 770 233 292" data-ar-aria="اتصال وكالة منسج الرقمية +967 770 233 292" data-en-aria="Call Mansaj Digital Agency +967 770 233 292">+967 770 233 292</a>
+   575→            </div>
+   576→          </li>
+   577→          <li>
+   578→            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+   579→            <div>
+   580→              <p class="fc-title" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</p>
+   581→              <a class="fc-phone ltr" href="mailto:masagdigital@gmail.com" aria-label="البريد الإلكتروني لوكالة منسج الرقمية masagdigital@gmail.com" data-ar-aria="البريد الإلكتروني لوكالة منسج الرقمية masagdigital@gmail.com" data-en-aria="Email Mansaj Digital Agency masagdigital@gmail.com">masagdigital@gmail.com</a>
+   582→            </div>
+   583→          </li>
+   584→        </ul>
+   585→        <a class="footer-insta" href="https://www.instagram.com/mansagdigital/" target="_blank" rel="noopener noreferrer">
+   586→          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"></use></svg>
+   587→          <span>
+   588→            <span class="handle ltr">@mansagdigital</span>
+   589→            <span class="fi-sub" data-ar="الحساب الرسمي لوكالة منسج الرقمية" data-en="The official account of Mansaj Digital">الحساب الرسمي لوكالة منسج الرقمية</span>
+   590→          </span>
+   591→        </a>
+   592→      </div>
+   593→    </div>
+   594→
+   595→    <div class="footer-bottom">
+   596→      <div class="container inner">
+   597→        <p><span data-ar="© " data-en="© ">© </span><span data-year>2025</span><span data-ar=" وكالة منسج الرقمية — Mansaj Digital" data-en=" Mansaj Digital Agency"> وكالة منسج الرقمية — Mansaj Digital</span></p>
+   598→        <p data-ar="صُنع بعناية من وكالة منسج" data-en="Crafted with care by Mansaj">صُنع بعناية من وكالة منسج</p>
+   599→      </div>
+   600→    </div>
+   601→  </footer>
+   602→
+   603→  <script src="js/theme.js" defer></script>
+   604→  <script src="js/main.js" defer></script>
+   605→</body>
+   606→</html>
+   607→

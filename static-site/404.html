@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-title-ar="الصفحة غير موجودة | وكالة منسج الرقمية" data-title-en="Page not found | Mansaj Digital Agency">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الصفحة غير موجودة | وكالة منسج الرقمية</title>
+  <meta name="description" content="الصفحة المطلوبة غير موجودة — عد إلى الصفحة الرئيسية لوكالة منسج الرقمية أو تصفح أعمالنا وخدماتنا.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#faf8f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b2426" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("mansaj-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") d.classList.add("dark");
+      } catch (e) {}
+      try {
+        var l = localStorage.getItem("mansaj-lang") || "en";
+        d.lang = l;
+        d.dir = l === "ar" ? "rtl" : "ltr";
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <main class="nf-wrap">
+    <div class="bg-blueprint" aria-hidden="true"></div>
+    <div class="nf-card">
+      <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="72" height="72"></span>
+      <p class="code ltr">404</p>
+      <h1 data-ar="هذه الصفحة غير موجودة" data-en="This page doesn't exist">هذه الصفحة غير موجودة</h1>
+      <p data-ar="يبدو أن الرابط الذي فتحته غير صحيح أو تم نقل الصفحة. لا تقلق — كل أعمالنا وخدماتنا في مكانها." data-en="Looks like the link you opened is wrong or the page has moved. Don't worry — all our work and services are right where they should be.">يبدو أن الرابط الذي فتحته غير صحيح أو تم نقل الصفحة. لا تقلق — كل أعمالنا وخدماتنا في مكانها.</p>
+      <div class="nf-actions">
+        <a href="index.html" class="btn btn-brand btn-lg">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg>
+          <span data-ar="العودة إلى الرئيسية" data-en="Back to home">العودة إلى الرئيسية</span>
+        </a>
+        <a href="projects.html" class="btn btn-outline btn-lg">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg>
+          <span data-ar="تصفّح أعمالنا" data-en="Browse our work">تصفّح أعمالنا</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating WhatsApp support button -->
+  <a class="wa-float" href="https://wa.me/967770233292?text=Hello%20Mansaj%20Digital" target="_blank" rel="noopener noreferrer"
+     data-wa-en="Hello Mansaj Digital 👋
+I visited your website and I want to discuss a project for my business."
+     data-wa-ar="مرحبًا منسج الرقمية 👋
+زرت موقعكم وأريد أن أناقش مشروعًا لنشاطي التجاري."
+     aria-label="تواصل مع منسج الرقمية عبر واتساب" data-ar-aria="تواصل مع منسج الرقمية عبر واتساب" data-en-aria="Chat with Mansaj Digital on WhatsApp" data-cursor="Chat">
+    <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+  </a>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

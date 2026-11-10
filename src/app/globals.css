@@ -1,0 +1,296 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-grotesk), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
+  --color-deep: var(--deep);
+  --color-deep-foreground: var(--deep-foreground);
+  --color-cream: var(--cream);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+/* ================================================================
+   Mansaj Digital — design tokens
+   Warm paper background, deep-teal ink, turquoise brand accents,
+   squared brutalist cards with offset shadows, blueprint grid.
+   ================================================================ */
+
+:root {
+  --radius: 0.5rem;
+
+  /* Light — warm paper with deep teal ink (logo palette) */
+  --background: #faf8f1;
+  --foreground: #10393c;
+  --card: #ffffff;
+  --card-foreground: #10393c;
+  --popover: #ffffff;
+  --popover-foreground: #10393c;
+  --primary: #10393c;
+  --primary-foreground: #f4f1e4;
+  --secondary: #e9f1ee;
+  --secondary-foreground: #10393c;
+  --muted: #f1eee3;
+  --muted-foreground: #557170;
+  --accent: #dcf0eb;
+  --accent-foreground: #0b4b47;
+  --destructive: #b3413a;
+  --border: #e3dfd0;
+  --input: #d8d4c4;
+  --ring: #17b3a6;
+
+  /* Brand */
+  --brand: #12a594;
+  --brand-foreground: #ffffff;
+  --brand-soft: #dcf0eb;
+  --deep: #10393c;
+  --deep-foreground: #f4f1e4;
+  --cream: #f2efe3;
+  --cream-foreground: #10393c;
+
+  --shadow-offset: 4px 4px 0 0 var(--brand);
+}
+
+.dark {
+  /* Dark — deep teal night with turquoise light */
+  --background: #0b2426;
+  --foreground: #eaf2ef;
+  --card: #103032;
+  --card-foreground: #eaf2ef;
+  --popover: #103032;
+  --popover-foreground: #eaf2ef;
+  --primary: #2bc8b9;
+  --primary-foreground: #062426;
+  --secondary: #12393c;
+  --secondary-foreground: #eaf2ef;
+  --muted: #113334;
+  --muted-foreground: #9db8b3;
+  --accent: #14403f;
+  --accent-foreground: #dff7f1;
+  --destructive: #e0655c;
+  --border: rgba(255, 255, 255, 0.09);
+  --input: rgba(255, 255, 255, 0.14);
+  --ring: #2bc8b9;
+
+  /* Brand */
+  --brand: #2bc8b9;
+  --brand-foreground: #062426;
+  --brand-soft: #123c3b;
+  --deep: #071c1e;
+  --deep-foreground: #eaf2ef;
+  --cream: #f2efe3;
+  --cream-foreground: #10393c;
+
+  --shadow-offset: 4px 4px 0 0 var(--brand);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01" on;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  /* Arabic mode — Alexandria leads (modern geometric Arabic sans) */
+  html[dir="rtl"] body {
+    font-family: var(--font-arabic), var(--font-grotesk), ui-sans-serif, system-ui,
+      sans-serif;
+  }
+
+  ::selection {
+    background: var(--brand);
+    color: var(--brand-foreground);
+  }
+
+  /* Slim squared scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in oklab, var(--muted-foreground) 35%, transparent);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in oklab, var(--muted-foreground) 55%, transparent);
+  }
+}
+
+/* ================================================================
+   Brand utilities
+   ================================================================ */
+
+/* Blueprint grid backdrop */
+.bg-blueprint {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--foreground) 7%, transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.bg-blueprint-deep {
+  background-image:
+    linear-gradient(rgba(244, 241, 228, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(244, 241, 228, 0.07) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Squared brutalist offset shadow */
+.shadow-offset {
+  box-shadow: var(--shadow-offset);
+}
+
+.shadow-offset-sm {
+  box-shadow: 3px 3px 0 0 var(--brand);
+}
+
+/* Little squares strip (brand motif) */
+.squares-strip {
+  display: inline-flex;
+  gap: 4px;
+}
+.squares-strip i {
+  width: 8px;
+  height: 8px;
+  background: var(--brand);
+  display: block;
+}
+.squares-strip i:nth-child(2) {
+  opacity: 0.55;
+}
+.squares-strip i:nth-child(3) {
+  opacity: 0.25;
+}
+
+/* Marquee */
+@keyframes marquee-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee-x 32s linear infinite;
+}
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+/* Terminal caret blink */
+@keyframes caret-blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.animate-caret {
+  animation: caret-blink 1s step-end infinite;
+}
+
+/* Pulsing WhatsApp float ring */
+@keyframes wa-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+.animate-wa-pulse {
+  animation: wa-pulse 2.2s ease-out infinite;
+}
+
+/* Floating brand squares decor */
+@keyframes float-y {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(6deg);
+  }
+}
+.animate-float {
+  animation: float-y 6s ease-in-out infinite;
+}
+
+/* ================================================================
+   Custom square cursor — hidden native cursor on precise pointers
+   ================================================================ */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor-on,
+  body.custom-cursor-on a,
+  body.custom-cursor-on button,
+  body.custom-cursor-on [role="button"] {
+    cursor: none;
+  }
+}
+
+/* ================================================================
+   RTL helpers (Arabic mode)
+   ================================================================ */
+[dir="rtl"] .flip-x {
+  transform: scaleX(-1);
+}
+
+/* ================================================================
+   Arabic display correctness — MUST stay outside @layer so it wins
+   over Tailwind utilities.
+   1) letter-spacing breaks Arabic letter joining → force 0 in RTL
+   2) mono fonts have no Arabic glyphs → let Alexandria take over
+   ================================================================ */
+[dir="rtl"] [class*="tracking-"] {
+  letter-spacing: 0;
+}
+html[dir="rtl"] .font-mono {
+  font-family: var(--font-arabic), var(--font-grotesk), ui-monospace, SFMono-Regular,
+    Menlo, monospace;
+}

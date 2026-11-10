@@ -1,0 +1,330 @@
+/* ================================================================== */
+/* Mansaj Digital — responsive rules                                   */
+/* Mobile-first: base styles live in style.css; every breakpoint       */
+/* adjustment (sm 640 / md 768 / lg 1024 / xl 1280) lives here.        */
+/* ================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* sm ≥ 640px                                                          */
+/* ------------------------------------------------------------------ */
+@media (min-width: 640px) {
+  .container {
+    padding-inline-start: 68px;
+    padding-inline-end: 24px;
+  }
+
+  .header-cta {
+    display: inline-flex;
+  }
+
+  .section {
+    padding-block: 5rem;
+  }
+  .section-heading {
+    margin-bottom: 3rem;
+  }
+  .section-heading h2 {
+    font-size: 2.25rem;
+  }
+  .section-heading .desc {
+    font-size: 1.125rem;
+  }
+
+  .page-hero .inner {
+    padding-block: 3.5rem 2.5rem;
+  }
+  .page-hero h1 {
+    font-size: 2.5rem;
+  }
+  .page-hero .desc {
+    font-size: 1.125rem;
+  }
+
+  .hero-inner {
+    padding-block: 3.5rem 5rem;
+  }
+  .hero-badge {
+    font-size: 0.875rem;
+  }
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero .lead {
+    font-size: 1.125rem;
+  }
+  .hero-q {
+    font-size: 1rem;
+  }
+  .hero-paths {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .path-card {
+    padding: 1.5rem;
+  }
+  .hero-showcase {
+    margin-top: 3.5rem;
+  }
+  .show-figure.ratio-main {
+    aspect-ratio: 16 / 6.6;
+  }
+  .show-figure.ratio-main .ratio-main-img {
+    aspect-ratio: 16 / 6.6;
+  }
+  .show-figure figcaption {
+    font-size: 0.875rem;
+  }
+  .show-figure.sub figcaption {
+    font-size: 0.75rem;
+  }
+  .trust-line {
+    margin-top: 4rem;
+  }
+  .trust-line .vr {
+    display: block;
+  }
+
+  .why-grid .heading-less {
+    margin-bottom: 2.5rem;
+  }
+  .bullets p {
+    padding-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .figure-banner .img-wrap {
+    aspect-ratio: 16 / 6.4;
+  }
+  .figure-banner figcaption {
+    font-size: 0.875rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-card {
+    padding: 1.5rem;
+  }
+  .stat-card .value {
+    font-size: 2.25rem;
+  }
+
+  .cards-grid.services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .faq-item {
+    padding-inline: 1.25rem;
+  }
+
+  .project-card .banner {
+    height: 10rem;
+  }
+  .modal .m-banner {
+    height: 11rem;
+  }
+  .modal .m-body {
+    padding: 1.5rem;
+  }
+  .modal .m-actions {
+    flex-direction: row;
+  }
+  .modal .m-actions .btn {
+    width: auto;
+  }
+
+  .cta-panel {
+    padding: 2.5rem;
+  }
+  .cta-panel h2 {
+    font-size: 2.25rem;
+  }
+  .cta-panel .panel-desc {
+    font-size: 1.125rem;
+  }
+  .cta-panel .panel-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .request-wrap {
+    padding: 2rem;
+  }
+  .f-grid.cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .request-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer-bottom .inner {
+    flex-direction: row;
+    text-align: start;
+  }
+
+  .nf-actions {
+    flex-direction: row;
+  }
+  .nf-card .code {
+    font-size: 4rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* md ≥ 768px                                                          */
+/* ------------------------------------------------------------------ */
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 2rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* lg ≥ 1024px                                                         */
+/* ------------------------------------------------------------------ */
+@media (min-width: 1024px) {
+  .header-nav {
+    display: block;
+  }
+  .section {
+    padding-block: 6rem;
+  }
+
+  .hero h1 {
+    font-size: 3.75rem;
+  }
+  .hero-accent-tr,
+  .hero-accent-bl {
+    display: grid;
+  }
+  .hero-accent-tr {
+    display: block;
+  }
+
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5rem;
+  }
+  .mockup {
+    max-width: none;
+  }
+  .mockup .phone-card {
+    width: 8rem;
+    inset-inline-start: -1.75rem;
+  }
+  .mockup .phone-card figcaption {
+    font-size: 10px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+  }
+  .stats-band .inner {
+    padding-block: 3rem;
+  }
+
+  .cards-grid.services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+
+  .steps {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .step .v-line {
+    display: none;
+  }
+  .step .step-body {
+    margin-top: 1.25rem;
+    padding-inline-start: 0;
+  }
+  .step .h-line {
+    display: block;
+    position: absolute;
+    top: 1.75rem;
+    inset-inline-start: 3.5rem;
+    inset-inline-end: -1rem;
+    height: 1px;
+    background: var(--border);
+  }
+  .step:last-child .h-line {
+    display: none;
+  }
+
+  .contact-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cta-panel {
+    padding: 3rem;
+  }
+
+  /* Dock tooltips only on large screens (like the original) */
+  .dock-tip {
+    display: block;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* xl ≥ 1280px                                                         */
+/* ------------------------------------------------------------------ */
+@media (min-width: 1280px) {
+  .container {
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Reduced motion — honor the user preference everywhere               */
+/* ------------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html.js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Small screens: keep the dock from covering the content edges        */
+/* ------------------------------------------------------------------ */
+@media (max-width: 1023px) {
+  .trust-line .vr {
+    display: none;
+  }
+  .hero-accent-tr,
+  .hero-accent-bl {
+    display: none;
+  }
+}
+
+/* Pricing grid */
+@media (min-width: 1100px) {
+  .cards-grid.pricing-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.1rem;
+  }
+}
+@media (min-width: 640px) and (max-width: 1099px) {
+  .cards-grid.pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.1rem;
+  }
+}

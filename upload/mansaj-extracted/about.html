@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-title-ar="من نحن | وكالة منسج الرقمية" data-title-en="About | Mansaj Digital Agency">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>من نحن | وكالة منسج الرقمية</title>
+  <meta name="description" content="تعرف على وكالة منسج الرقمية: رؤيتنا ورسالتنا وأهدافنا وطريقة عملنا في بناء مواقع واضحة تخدم المشاريع على كل الشاشات.">
+  <meta name="theme-color" content="#faf8f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b2426" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="من نحن | وكالة منسج الرقمية">
+  <meta property="og:description" content="رؤية منسج ورسالتها وأهدافها وطريقة عملها في بناء مواقع تخدم المشاريع فعليًا.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:locale" content="ar_YE">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("mansaj-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") d.classList.add("dark");
+      } catch (e) {}
+      try {
+        var l = localStorage.getItem("mansaj-lang") || "ar";
+        d.lang = l;
+        d.dir = l === "ar" ? "rtl" : "ltr";
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">تخطَّ إلى المحتوى</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container bar">
+      <a href="index.html" class="brand-lockup" aria-label="منسج الرقمية — الرئيسية" data-ar-aria="منسج الرقمية — الرئيسية" data-en-aria="Mansaj Digital — Home">
+        <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="36" height="36"></span>
+        <span class="brand-word">
+          <span class="brand-name" data-ar="منسج" data-en="Mansaj">منسج</span>
+          <span class="brand-sub" data-ar="الرقمية · Digital" data-en="Digital · الرقمية">الرقمية · Digital</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="التنقل الرئيسي" data-ar-aria="التنقل الرئيسي" data-en-aria="Main navigation">
+        <ul>
+          <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="about.html" aria-current="page" data-ar="من نحن" data-en="About">من نحن</a></li>
+          <li><a href="services.html" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+          <li><a href="projects.html" data-ar="أعمالنا" data-en="Work">أعمالنا</a></li>
+          <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-outline lang-toggle" type="button" aria-label="Switch to English" data-ar-aria="Switch to English" data-en-aria="التبديل إلى العربية">EN</button>
+        <button class="btn btn-outline btn-icon theme-toggle" type="button" aria-label="تبديل المظهر بين الداكن والفاتح" data-ar-aria="تبديل المظهر بين الداكن والفاتح" data-en-aria="Toggle dark and light mode">
+          <svg class="icon sun-i" aria-hidden="true"><use href="assets/icons/sprite.svg#i-sun"></use></svg>
+          <svg class="icon moon-i" aria-hidden="true"><use href="assets/icons/sprite.svg#i-moon"></use></svg>
+        </button>
+        <a href="contact.html" class="btn btn-primary header-cta" data-ar="ابدأ مشروعك" data-en="Start your project">ابدأ مشروعك</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Floating nav dock ============ -->
+  <nav class="dock" aria-label="القائمة العائمة" data-ar-aria="القائمة العائمة" data-en-aria="Floating menu">
+    <div class="dock-panel">
+      <button type="button" class="dock-btn sheet-open-btn" aria-label="فتح القائمة الكاملة" data-ar-aria="فتح القائمة الكاملة" data-en-aria="Open the full menu" aria-expanded="false" aria-controls="site-sheet">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-menu"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="القائمة الكاملة" data-en="Full menu">القائمة الكاملة</span>
+      </button>
+      <span class="dock-sep" aria-hidden="true"></span>
+      <a href="index.html" class="dock-btn" aria-label="الرئيسية" data-ar-aria="الرئيسية" data-en-aria="Home">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="الرئيسية" data-en="Home">الرئيسية</span>
+      </a>
+      <a href="about.html" class="dock-btn" aria-current="page" aria-label="من نحن" data-ar-aria="من نحن" data-en-aria="About">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="من نحن" data-en="About">من نحن</span>
+      </a>
+      <a href="services.html" class="dock-btn" aria-label="خدماتنا" data-ar-aria="خدماتنا" data-en-aria="Services">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="خدماتنا" data-en="Services">خدماتنا</span>
+      </a>
+      <a href="projects.html" class="dock-btn" aria-label="أعمالنا" data-ar-aria="أعمالنا" data-en-aria="Work">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="أعمالنا" data-en="Work">أعمالنا</span>
+      </a>
+      <a href="contact.html" class="dock-btn" aria-label="تواصل معنا" data-ar-aria="تواصل معنا" data-en-aria="Contact">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span>
+      </a>
+      <span class="dock-sep" aria-hidden="true"></span>
+      <a href="contact.html" class="dock-btn cta" aria-label="ابدأ مشروعك الآن" data-ar-aria="ابدأ مشروعك الآن" data-en-aria="Start your project now">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-square-pen"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="ابدأ مشروعك" data-en="Start your project">ابدأ مشروعك</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ Mobile sheet ============ -->
+  <div class="sheet-overlay" aria-hidden="true"></div>
+  <aside class="sheet" id="site-sheet" role="dialog" aria-modal="true" aria-hidden="true" aria-label="قائمة التنقل" data-ar-aria="قائمة التنقل" data-en-aria="Navigation menu">
+    <div class="sheet-head">
+      <span class="brand-lockup">
+        <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="" width="36" height="36"></span>
+        <span class="brand-word">
+          <span class="brand-name" data-ar="منسج" data-en="Mansaj">منسج</span>
+          <span class="brand-sub" data-ar="الرقمية · Digital" data-en="Digital · الرقمية">الرقمية · Digital</span>
+        </span>
+      </span>
+      <button class="btn btn-outline btn-icon sheet-close" type="button" aria-label="إغلاق القائمة" data-ar-aria="إغلاق القائمة" data-en-aria="Close menu">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-x"></use></svg>
+      </button>
+    </div>
+    <nav class="sheet-nav" aria-label="قائمة التنقل الكاملة" data-ar-aria="قائمة التنقل الكاملة" data-en-aria="Full navigation">
+      <ul>
+        <li><a href="index.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg><span data-ar="الرئيسية" data-en="Home">الرئيسية</span><span class="num ltr">01</span></a></li>
+        <li><a href="about.html" aria-current="page"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users"></use></svg><span data-ar="من نحن" data-en="About">من نحن</span><span class="num ltr">02</span></a></li>
+        <li><a href="services.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg><span data-ar="خدماتنا" data-en="Services">خدماتنا</span><span class="num ltr">03</span></a></li>
+        <li><a href="projects.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg><span data-ar="أعمالنا" data-en="Work">أعمالنا</span><span class="num ltr">04</span></a></li>
+        <li><a href="contact.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg><span data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span><span class="num ltr">05</span></a></li>
+      </ul>
+    </nav>
+    <div class="sheet-foot">
+      <a href="contact.html" class="btn btn-primary btn-block" data-ar="أريد موقعًا لمشروعي" data-en="I want a website">أريد موقعًا لمشروعي</a>
+      <a class="wa-line" href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon-fill" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+        <span data-ar="تواصل مباشر عبر واتساب" data-en="Chat on WhatsApp">تواصل مباشر عبر واتساب</span>
+      </a>
+      <a class="wa-line" href="mailto:masagdigital@gmail.com">
+        <svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+        <span data-ar="راسلنا عبر البريد" data-en="Email us">راسلنا عبر البريد</span>
+      </a>
+      <p class="brand-mini">
+        <img src="assets/logos/mansaj-logo-mark-96.png" alt="" width="16" height="16">
+        <span data-ar="وكالة منسج الرقمية" data-en="Mansaj Digital Agency">وكالة منسج الرقمية</span>
+      </p>
+    </div>
+  </aside>
+
+  <main id="main">
+    <!-- ============ Page hero ============ -->
+    <section class="page-hero">
+      <div class="bg-blueprint" aria-hidden="true"></div>
+      <div class="container inner">
+        <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="من نحن" data-en="About us">من نحن</span></p>
+        <h1 data-ar="وكالة منسج الرقمية" data-en="Mansaj Digital Agency">وكالة منسج الرقمية</h1>
+        <p class="desc" data-ar="وكالة متخصصة في تصميم وتطوير المواقع، نبدأ من احتياج نشاطك الحقيقي ونبني حضورًا واضحًا على الويب يخدم عملاءك ويشرح قيمة مشروعك." data-en="An agency specialized in designing and developing websites. We start from what your business truly needs and build a clear web presence that serves your customers and explains your project's value.">وكالة متخصصة في تصميم وتطوير المواقع، نبدأ من احتياج نشاطك الحقيقي ونبني حضورًا واضحًا على الويب يخدم عملاءك ويشرح قيمة مشروعك.</p>
+      </div>
+    </section>
+
+    <!-- ============ Who we are ============ -->
+    <section class="section" aria-label="نبذة عن منسج" data-ar-aria="نبذة عن منسج" data-en-aria="About Mansaj" style="padding-top:2rem">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="نبذة تعريفية" data-en="Overview">نبذة تعريفية</span></p>
+          <h2 data-ar="«منسج» — حيث يُفصَل حضورك على الويب على مقاس مشروعك." data-en="“Mansaj” — where your web presence is tailored to fit your project.">«منسج» — حيث يُفصَل حضورك على الويب على مقاس مشروعك.</h2>
+          <p class="desc" data-ar="اسم «منسج» يعبّر عن طريقتنا: مثل النسيج الذي يُفصَل خيطًا خيطًا، نبني موقعك قطعة قطعة بدءًا من فهم نشاطك وجمهورك، مرورًا باختيار نوع الموقع ومحتواه ووظائفه، وانتهاءً بتجربة واضحة وسريعة تعمل على كل الشاشات. ركّزنا خلال السنة الماضية على بناء مواقع حقيقية لأنشطة مختلفة — مطاعم، مكاتب، أنشطة عقارية وغيرها — بأكثر من 150 موقعًا و150 عميلًا." data-en="The name “Mansaj” — Arabic for loom — reflects our method: like fabric woven thread by thread, we build your website piece by piece, starting from understanding your business and audience, through choosing the right website type, content, and features, and ending with a clear, fast experience on every screen. Over the past year we focused on building real websites for different businesses — restaurants, offices, real-estate activities, and more — with 150+ websites and 150 clients.">اسم «منسج» يعبّر عن طريقتنا: مثل النسيج الذي يُفصَل خيطًا خيطًا، نبني موقعك قطعة قطعة بدءًا من فهم نشاطك وجمهورك، مرورًا باختيار نوع الموقع ومحتواه ووظائفه، وانتهاءً بتجربة واضحة وسريعة تعمل على كل الشاشات. ركّزنا خلال السنة الماضية على بناء مواقع حقيقية لأنشطة مختلفة — مطاعم، مكاتب، أنشطة عقارية وغيرها — بأكثر من 150 موقعًا و150 عميلًا.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Vision / Mission / Goals ============ -->
+    <section class="section" aria-label="الرؤية والرسالة والأهداف" data-ar-aria="الرؤية والرسالة والأهداف" data-en-aria="Vision, mission, and goals" style="padding-top:0">
+      <div class="container">
+        <div class="cards-grid services-grid">
+          <article class="service-card reveal">
+            <div class="head">
+              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-compass"></use></svg></span>
+              <h3 data-ar="رؤيتنا" data-en="Our vision">رؤيتنا</h3>
+            </div>
+            <p class="s-desc" data-ar="أن يكون لكل مشروع موقع واضح يشرح قيمته بنفسه، ويجعل وصول العميل إلى ما يحتاج أمرًا بديهيًا لا يحتاج بحثًا." data-en="A world where every project has a clear website that explains its own value, and where customers find what they need without searching.">أن يكون لكل مشروع موقع واضح يشرح قيمته بنفسه، ويجعل وصول العميل إلى ما يحتاج أمرًا بديهيًا لا يحتاج بحثًا.</p>
+          </article>
+          <article class="service-card reveal" style="--reveal-delay:.08s">
+            <div class="head">
+              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-message-square-text"></use></svg></span>
+              <h3 data-ar="رسالتنا" data-en="Our mission">رسالتنا</h3>
+            </div>
+            <p class="s-desc" data-ar="نصمّم مواقع تبدأ من احتياج النشاط الحقيقي: تجربة واضحة وسريعة على كل الشاشات، محتوى منظم، وخطوات عمل شفافة من البداية حتى التسليم." data-en="We design websites that start from the real needs of the business: a clear, fast experience on every screen, organized content, and transparent steps from start to delivery.">نصمّم مواقع تبدأ من احتياج النشاط الحقيقي: تجربة واضحة وسريعة على كل الشاشات، محتوى منظم، وخطوات عمل شفافة من البداية حتى التسليم.</p>
+          </article>
+          <article class="service-card reveal" style="--reveal-delay:.16s">
+            <div class="head">
+              <span class="s-icon"><svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-sparkles"></use></svg></span>
+              <h3 data-ar="أهدافنا" data-en="Our goals">أهدافنا</h3>
+            </div>
+            <p class="s-desc" data-ar="تبسيط رحلة صاحب النشاط من الفكرة إلى موقع يعمل لأجله، وتقديم مواقع واضحة وسهلة الاستخدام على الهاتف أولًا، ومرافقته بعد التسليم بخيارات دعم وصيانة واضحة." data-en="Simplify the business owner's journey from idea to a website that works for them, deliver clear, mobile-first experiences, and stay supportive after delivery with clear maintenance options.">تبسيط رحلة صاحب النشاط من الفكرة إلى موقع يعمل لأجله، وتقديم مواقع واضحة وسهلة الاستخدام على الهاتف أولًا، ومرافقته بعد التسليم بخيارات دعم وصيانة واضحة.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Why Mansaj ============ -->
+    <section class="section" aria-label="لماذا منسج" data-ar-aria="لماذا منسج" data-en-aria="Why Mansaj" style="padding-top:0;padding-bottom:0">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="لماذا منسج؟" data-en="Why Mansaj?">لماذا منسج؟</span></p>
+          <h2 data-ar="لا نبني صفحات فقط؛ نبني تجربة تناسب هدف مشروعك." data-en="We don't just build pages; we build an experience that fits your project's goal.">لا نبني صفحات فقط؛ نبني تجربة تناسب هدف مشروعك.</h2>
+          <p class="desc" data-ar="في منسج نبدأ من احتياج النشاط، ثم نختار نوع الموقع والمحتوى والوظائف التي تخدمه. نركز على وضوح التجربة وسهولة استخدامها على الهاتف، ونرافقك بخطوات متفق عليها من بداية المشروع حتى التسليم." data-en="At Mansaj we start from what your business needs, then choose the website type, content, and features that serve it. We focus on a clear experience that is easy to use on the phone, and we walk with you through agreed steps from the start of the project until delivery.">في منسج نبدأ من احتياج النشاط، ثم نختار نوع الموقع والمحتوى والوظائف التي تخدمه. نركز على وضوح التجربة وسهولة استخدامها على الهاتف، ونرافقك بخطوات متفق عليها من بداية المشروع حتى التسليم.</p>
+        </div>
+        <figure class="figure-banner reveal" style="--reveal-delay:.1s;margin-bottom:0">
+          <div class="img-wrap">
+            <img src="assets/images/dev-work.jpg" alt="مطوّرة تبني موقعًا على حاسوبها المحمول" data-ar-alt="مطوّرة تبني موقعًا على حاسوبها المحمول" data-en-alt="A developer building a website on her laptop" loading="lazy" width="1152" height="648">
+          </div>
+          <figcaption data-ar="من الفكرة إلى التنفيذ — بخطوات واضحة ومتفق عليها" data-en="From the idea to the implementation — clear, agreed steps">من الفكرة إلى التنفيذ — بخطوات واضحة ومتفق عليها</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ How we work ============ -->
+    <section class="section" aria-label="طريقة العمل" data-ar-aria="طريقة العمل" data-en-aria="How we work">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="طريقة العمل" data-en="How we work">طريقة العمل</span></p>
+          <h2 data-ar="واضحين معك من أول خطوة" data-en="Clear with you from the first step">واضحين معك من أول خطوة</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="h-line" aria-hidden="true"></span>
+            <span class="step-num ltr" aria-hidden="true">01</span>
+            <span class="v-line" aria-hidden="true"></span>
+            <div class="step-body">
+              <h3 data-ar="نفهم احتياجك" data-en="Understand your need">نفهم احتياجك</h3>
+              <p data-ar="نعرف طبيعة نشاطك، وجمهورك، وما الذي تريد أن يحققه الموقع." data-en="We learn the nature of your business, your audience, and what you want the website to achieve.">نعرف طبيعة نشاطك، وجمهورك، وما الذي تريد أن يحققه الموقع.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--reveal-delay:.08s">
+            <span class="h-line" aria-hidden="true"></span>
+            <span class="step-num ltr" aria-hidden="true">02</span>
+            <span class="v-line" aria-hidden="true"></span>
+            <div class="step-body">
+              <h3 data-ar="نحدد الحل" data-en="Define the solution">نحدد الحل</h3>
+              <p data-ar="نختار نوع الموقع والخدمات والوظائف التي تناسب مشروعك." data-en="We choose the website type, services, and features that fit your project.">نختار نوع الموقع والخدمات والوظائف التي تناسب مشروعك.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--reveal-delay:.16s">
+            <span class="h-line" aria-hidden="true"></span>
+            <span class="step-num ltr" aria-hidden="true">03</span>
+            <span class="v-line" aria-hidden="true"></span>
+            <div class="step-body">
+              <h3 data-ar="نصمّم ونطوّر" data-en="Design & develop">نصمّم ونطوّر</h3>
+              <p data-ar="نبني تجربة مرتبة ومتجاوبة ونراجع التفاصيل معك." data-en="We build a tidy, responsive experience and review the details with you.">نبني تجربة مرتبة ومتجاوبة ونراجع التفاصيل معك.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--reveal-delay:.24s">
+            <span class="h-line" aria-hidden="true"></span>
+            <span class="step-num ltr" aria-hidden="true">04</span>
+            <span class="v-line" aria-hidden="true"></span>
+            <div class="step-body">
+              <h3 data-ar="نختبر ونسلّم" data-en="Test & deliver">نختبر ونسلّم</h3>
+              <p data-ar="نختبر الروابط والصفحات والوظائف، ثم نسلّم المشروع حسب النطاق المتفق عليه." data-en="We test the links, pages, and functionality, then deliver the project according to the agreed scope.">نختبر الروابط والصفحات والوظائف، ثم نسلّم المشروع حسب النطاق المتفق عليه.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--reveal-delay:.32s">
+            <span class="step-num ltr" aria-hidden="true">05</span>
+            <div class="step-body">
+              <h3 data-ar="نساندك" data-en="Support you">نساندك</h3>
+              <p data-ar="نناقش خيارات الصيانة والدعم والاستضافة إذا كانت ضمن احتياجك." data-en="We discuss maintenance, support, and hosting options if they are part of your needs.">نناقش خيارات الصيانة والدعم والاستضافة إذا كانت ضمن احتياجك.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Honest stats ============ -->
+    <section class="stats-band" aria-label="أرقام منسج" data-ar-aria="أرقام منسج" data-en-aria="Mansaj in numbers">
+      <div class="bg-blueprint" aria-hidden="true"></div>
+      <div class="container inner">
+        <div class="stats-grid">
+          <div class="stat-card reveal">
+            <span class="dot" aria-hidden="true"></span>
+            <p class="value ltr" data-count="150" data-suffix="+">150+</p>
+            <p class="label" data-ar="موقع بُني خلال السنة الماضية" data-en="websites built last year">موقع بُني خلال السنة الماضية</p>
+          </div>
+          <div class="stat-card reveal" style="--reveal-delay:.08s">
+            <span class="dot" aria-hidden="true"></span>
+            <p class="value ltr" data-count="150">150</p>
+            <p class="label" data-ar="عميل خلال السنة الماضية" data-en="clients last year">عميل خلال السنة الماضية</p>
+          </div>
+          <div class="stat-card reveal" style="--reveal-delay:.16s">
+            <span class="dot" aria-hidden="true"></span>
+            <p class="value ltr" data-count="1" data-suffix="+">1+</p>
+            <p class="label" data-ar="سنة خبرة" data-en="year of experience">سنة خبرة</p>
+          </div>
+          <div class="stat-card reveal" style="--reveal-delay:.24s">
+            <span class="dot" aria-hidden="true"></span>
+            <p class="value ltr" data-count="356">356</p>
+            <p class="label" data-ar="ساعة عمل فعلية" data-en="actual working hours">ساعة عمل فعلية</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact CTA ============ -->
+    <section class="section" aria-label="تواصل مع منسج" data-ar-aria="تواصل مع منسج" data-en-aria="Contact Mansaj">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="bg-blueprint" aria-hidden="true"></div>
+          <h2 data-ar="جاهز تطوّر حضور مشروعك؟" data-en="Ready to develop your project's presence?">جاهز تطوّر حضور مشروعك؟</h2>
+          <p class="panel-desc" data-ar="اختر نوع الخدمة، وأخبرنا ببعض التفاصيل، وسنجهّز لك رسالة واضحة لبدء التواصل مع وكالة منسج مباشرة عبر واتساب." data-en="Pick your service type, tell us a few details, and we'll prepare a clear message to start the conversation with the Mansaj agency directly on WhatsApp.">اختر نوع الخدمة، وأخبرنا ببعض التفاصيل، وسنجهّز لك رسالة واضحة لبدء التواصل مع وكالة منسج مباشرة عبر واتساب.</p>
+          <div class="panel-actions">
+            <a href="contact.html" class="btn btn-brand btn-lg" style="border-radius:.25rem;padding-inline:1.75rem">
+              <span data-ar="ابدأ باختيار الخدمة" data-en="Start by choosing a service">ابدأ باختيار الخدمة</span>
+            </a>
+            <a href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="border-radius:.25rem;border:1px solid color-mix(in srgb, var(--deep-foreground) 30%, transparent);color:var(--deep-foreground)">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+              <span data-ar="واتساب الوكالة مباشرة" data-en="WhatsApp the agency directly">واتساب الوكالة مباشرة</span>
+            </a>
+          </div>
+          <p class="panel-note" data-ar="لا تعرف أي خدمة تناسبك؟ اختر «ساعدوني في الاختيار» في نموذج الطلب." data-en="Not sure which service fits? Choose “Help me choose” in the request form.">لا تعرف أي خدمة تناسبك؟ اختر «ساعدوني في الاختيار» في نموذج الطلب.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-lockup">
+          <span class="logo-plate lg"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="44" height="44"></span>
+          <span class="brand-word">
+            <span class="brand-name" data-ar="منسج الرقمية" data-en="Mansaj Digital">منسج الرقمية</span>
+            <span class="brand-sub ltr" data-ar="Mansaj Digital" data-en="منسج الرقمية">Mansaj Digital</span>
+          </span>
+        </span>
+        <p class="tagline" data-ar="مشروعك يستحق موقعًا يعمل لأجله." data-en="Your project deserves a website that works for it.">مشروعك يستحق موقعًا يعمل لأجله.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="روابط الأقسام" data-ar-aria="روابط الأقسام" data-en-aria="Section links">
+        <p class="col-title" data-ar="أقسام الموقع" data-en="Site sections">أقسام الموقع</p>
+        <ul>
+          <li><a href="index.html"><span class="dot" aria-hidden="true"></span><span data-ar="الرئيسية" data-en="Home">الرئيسية</span></a></li>
+          <li><a href="about.html"><span class="dot" aria-hidden="true"></span><span data-ar="من نحن" data-en="About">من نحن</span></a></li>
+          <li><a href="services.html"><span class="dot" aria-hidden="true"></span><span data-ar="خدماتنا" data-en="Services">خدماتنا</span></a></li>
+          <li><a href="projects.html"><span class="dot" aria-hidden="true"></span><span data-ar="أعمالنا" data-en="Work">أعمالنا</span></a></li>
+          <li><a href="contact.html"><span class="dot" aria-hidden="true"></span><span data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <p class="col-title" data-ar="تواصل" data-en="Contact">تواصل</p>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+            <div>
+              <p class="fc-title" data-ar="وكالة منسج الرقمية — التواصل الرسمي" data-en="Mansaj Digital Agency — Official contact">وكالة منسج الرقمية — التواصل الرسمي</p>
+              <a class="fc-phone ltr" href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer" aria-label="واتساب وكالة منسج الرقمية +967 770 233 292" data-ar-aria="واتساب وكالة منسج الرقمية +967 770 233 292" data-en-aria="WhatsApp Mansaj Digital Agency +967 770 233 292">+967 770 233 292</a>
+            </div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-phone"></use></svg>
+            <div>
+              <p class="fc-title" data-ar="اتصال مباشر" data-en="Direct call">اتصال مباشر</p>
+              <a class="fc-phone ltr" href="tel:+967770233292" aria-label="اتصال وكالة منسج الرقمية +967 770 233 292" data-ar-aria="اتصال وكالة منسج الرقمية +967 770 233 292" data-en-aria="Call Mansaj Digital Agency +967 770 233 292">+967 770 233 292</a>
+            </div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+            <div>
+              <p class="fc-title" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</p>
+              <a class="fc-phone ltr" href="mailto:masagdigital@gmail.com" aria-label="البريد الإلكتروني لوكالة منسج الرقمية masagdigital@gmail.com" data-ar-aria="البريد الإلكتروني لوكالة منسج الرقمية masagdigital@gmail.com" data-en-aria="Email Mansaj Digital Agency masagdigital@gmail.com">masagdigital@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+        <a class="footer-insta" href="https://www.instagram.com/mansagdigital/" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"></use></svg>
+          <span>
+            <span class="handle ltr">@mansagdigital</span>
+            <span class="fi-sub" data-ar="الحساب الرسمي لوكالة منسج الرقمية" data-en="The official account of Mansaj Digital">الحساب الرسمي لوكالة منسج الرقمية</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container inner">
+        <p><span data-ar="© " data-en="© ">© </span><span data-year>2025</span><span data-ar=" وكالة منسج الرقمية — Mansaj Digital" data-en=" Mansaj Digital Agency"> وكالة منسج الرقمية — Mansaj Digital</span></p>
+        <p data-ar="صُنع بعناية من وكالة منسج" data-en="Crafted with care by Mansaj">صُنع بعناية من وكالة منسج</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-title-ar="أعمالنا | وكالة منسج الرقمية" data-title-en="Our Work | Mansaj Digital Agency">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>أعمالنا | وكالة منسج الرقمية</title>
+  <meta name="description" content="مشاريع منسج الرقمية على أرض الواقع: مواقع مطاعم ومكاتب قانونية وأنشطة عقارية — افتح أي مشروع ومعاينة الموقع الحقيقي بنفسك.">
+  <meta name="theme-color" content="#faf8f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0b2426" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="أعمالنا | وكالة منسج الرقمية">
+  <meta property="og:description" content="سبعة مشاريع حقيقية بروابط معاينة مباشرة وتقييمات أصحاب المشاريع.">
+  <meta property="og:image" content="assets/images/og-image.jpg">
+  <meta property="og:locale" content="ar_YE">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.add("js");
+      try {
+        var t = localStorage.getItem("mansaj-theme");
+        if (!t) t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        if (t === "dark") d.classList.add("dark");
+      } catch (e) {}
+      try {
+        var l = localStorage.getItem("mansaj-lang") || "ar";
+        d.lang = l;
+        d.dir = l === "ar" ? "rtl" : "ltr";
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-ar="تخطَّ إلى المحتوى" data-en="Skip to content">تخطَّ إلى المحتوى</a>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container bar">
+      <a href="index.html" class="brand-lockup" aria-label="منسج الرقمية — الرئيسية" data-ar-aria="منسج الرقمية — الرئيسية" data-en-aria="Mansaj Digital — Home">
+        <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="36" height="36"></span>
+        <span class="brand-word">
+          <span class="brand-name" data-ar="منسج" data-en="Mansaj">منسج</span>
+          <span class="brand-sub" data-ar="الرقمية · Digital" data-en="Digital · الرقمية">الرقمية · Digital</span>
+        </span>
+      </a>
+      <nav class="header-nav" aria-label="التنقل الرئيسي" data-ar-aria="التنقل الرئيسي" data-en-aria="Main navigation">
+        <ul>
+          <li><a href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+          <li><a href="about.html" data-ar="من نحن" data-en="About">من نحن</a></li>
+          <li><a href="services.html" data-ar="خدماتنا" data-en="Services">خدماتنا</a></li>
+          <li><a href="projects.html" aria-current="page" data-ar="أعمالنا" data-en="Work">أعمالنا</a></li>
+          <li><a href="contact.html" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="btn btn-outline lang-toggle" type="button" aria-label="Switch to English" data-ar-aria="Switch to English" data-en-aria="التبديل إلى العربية">EN</button>
+        <button class="btn btn-outline btn-icon theme-toggle" type="button" aria-label="تبديل المظهر بين الداكن والفاتح" data-ar-aria="تبديل المظهر بين الداكن والفاتح" data-en-aria="Toggle dark and light mode">
+          <svg class="icon sun-i" aria-hidden="true"><use href="assets/icons/sprite.svg#i-sun"></use></svg>
+          <svg class="icon moon-i" aria-hidden="true"><use href="assets/icons/sprite.svg#i-moon"></use></svg>
+        </button>
+        <a href="contact.html" class="btn btn-primary header-cta" data-ar="ابدأ مشروعك" data-en="Start your project">ابدأ مشروعك</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Floating nav dock ============ -->
+  <nav class="dock" aria-label="القائمة العائمة" data-ar-aria="القائمة العائمة" data-en-aria="Floating menu">
+    <div class="dock-panel">
+      <button type="button" class="dock-btn sheet-open-btn" aria-label="فتح القائمة الكاملة" data-ar-aria="فتح القائمة الكاملة" data-en-aria="Open the full menu" aria-expanded="false" aria-controls="site-sheet">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-menu"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="القائمة الكاملة" data-en="Full menu">القائمة الكاملة</span>
+      </button>
+      <span class="dock-sep" aria-hidden="true"></span>
+      <a href="index.html" class="dock-btn" aria-label="الرئيسية" data-ar-aria="الرئيسية" data-en-aria="Home">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="الرئيسية" data-en="Home">الرئيسية</span>
+      </a>
+      <a href="about.html" class="dock-btn" aria-label="من نحن" data-ar-aria="من نحن" data-en-aria="About">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="من نحن" data-en="About">من نحن</span>
+      </a>
+      <a href="services.html" class="dock-btn" aria-label="خدماتنا" data-ar-aria="خدماتنا" data-en-aria="Services">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="خدماتنا" data-en="Services">خدماتنا</span>
+      </a>
+      <a href="projects.html" class="dock-btn" aria-current="page" aria-label="أعمالنا" data-ar-aria="أعمالنا" data-en-aria="Work">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="أعمالنا" data-en="Work">أعمالنا</span>
+      </a>
+      <a href="contact.html" class="dock-btn" aria-label="تواصل معنا" data-ar-aria="تواصل معنا" data-en-aria="Contact">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span>
+      </a>
+      <span class="dock-sep" aria-hidden="true"></span>
+      <a href="contact.html" class="dock-btn cta" aria-label="ابدأ مشروعك الآن" data-ar-aria="ابدأ مشروعك الآن" data-en-aria="Start your project now">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-square-pen"></use></svg>
+        <span class="dock-tip" aria-hidden="true" data-ar="ابدأ مشروعك" data-en="Start your project">ابدأ مشروعك</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- ============ Mobile sheet ============ -->
+  <div class="sheet-overlay" aria-hidden="true"></div>
+  <aside class="sheet" id="site-sheet" role="dialog" aria-modal="true" aria-hidden="true" aria-label="قائمة التنقل" data-ar-aria="قائمة التنقل" data-en-aria="Navigation menu">
+    <div class="sheet-head">
+      <span class="brand-lockup">
+        <span class="logo-plate"><img src="assets/logos/mansaj-logo-mark.png" alt="" width="36" height="36"></span>
+        <span class="brand-word">
+          <span class="brand-name" data-ar="منسج" data-en="Mansaj">منسج</span>
+          <span class="brand-sub" data-ar="الرقمية · Digital" data-en="Digital · الرقمية">الرقمية · Digital</span>
+        </span>
+      </span>
+      <button class="btn btn-outline btn-icon sheet-close" type="button" aria-label="إغلاق القائمة" data-ar-aria="إغلاق القائمة" data-en-aria="Close menu">
+        <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-x"></use></svg>
+      </button>
+    </div>
+    <nav class="sheet-nav" aria-label="قائمة التنقل الكاملة" data-ar-aria="قائمة التنقل الكاملة" data-en-aria="Full navigation">
+      <ul>
+        <li><a href="index.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-house"></use></svg><span data-ar="الرئيسية" data-en="Home">الرئيسية</span><span class="num ltr">01</span></a></li>
+        <li><a href="about.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-users"></use></svg><span data-ar="من نحن" data-en="About">من نحن</span><span class="num ltr">02</span></a></li>
+        <li><a href="services.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layers"></use></svg><span data-ar="خدماتنا" data-en="Services">خدماتنا</span><span class="num ltr">03</span></a></li>
+        <li><a href="projects.html" aria-current="page"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-layout-grid"></use></svg><span data-ar="أعمالنا" data-en="Work">أعمالنا</span><span class="num ltr">04</span></a></li>
+        <li><a href="contact.html"><svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg><span data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span><span class="num ltr">05</span></a></li>
+      </ul>
+    </nav>
+    <div class="sheet-foot">
+      <a href="contact.html" class="btn btn-primary btn-block" data-ar="أريد موقعًا لمشروعي" data-en="I want a website">أريد موقعًا لمشروعي</a>
+      <a class="wa-line" href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer">
+        <svg class="icon icon-fill" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+        <span data-ar="تواصل مباشر عبر واتساب" data-en="Chat on WhatsApp">تواصل مباشر عبر واتساب</span>
+      </a>
+      <a class="wa-line" href="mailto:masagdigital@gmail.com">
+        <svg class="icon" style="color:var(--brand)" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+        <span data-ar="راسلنا عبر البريد" data-en="Email us">راسلنا عبر البريد</span>
+      </a>
+      <p class="brand-mini">
+        <img src="assets/logos/mansaj-logo-mark-96.png" alt="" width="16" height="16">
+        <span data-ar="وكالة منسج الرقمية" data-en="Mansaj Digital Agency">وكالة منسج الرقمية</span>
+      </p>
+    </div>
+  </aside>
+
+  <main id="main">
+    <!-- ============ Page hero ============ -->
+    <section class="page-hero">
+      <div class="bg-blueprint" aria-hidden="true"></div>
+      <div class="container inner">
+        <p class="eyebrow"><span class="squares-strip" aria-hidden="true"><i></i></span><span data-ar="أعمال منسج" data-en="Mansaj's work">أعمال منسج</span></p>
+        <h1 data-ar="مشاريع منسج على أرض الواقع" data-en="Mansaj projects in the real world">مشاريع منسج على أرض الواقع</h1>
+        <p class="desc" data-ar="تصفّح نماذج من المواقع التي طوّرناها لمجالات مختلفة، واضغط «معاينة الموقع» لتفتح الموقع الحقيقي وتجرّبه بنفسك، ثم أخبرنا بما تحتاجه لمشروعك." data-en="Browse a selection of the websites we built for different fields. Hit “Preview website” to open the live site and try it yourself, then tell us what your project needs.">تصفّح نماذج من المواقع التي طوّرناها لمجالات مختلفة، واضغط «معاينة الموقع» لتفتح الموقع الحقيقي وتجرّبه بنفسك، ثم أخبرنا بما تحتاجه لمشروعك.</p>
+      </div>
+    </section>
+
+    <!-- ============ Projects ============ -->
+    <section class="section" aria-label="المشاريع" data-ar-aria="المشاريع" data-en-aria="Projects" style="padding-top:2rem">
+      <div class="container">
+        <!-- Filters -->
+        <div class="filter-chips reveal" role="group" aria-label="تصفية المشاريع حسب المجال" data-ar-aria="تصفية المشاريع حسب المجال" data-en-aria="Filter projects by field">
+          <button type="button" class="chip" data-filter="all" aria-pressed="true"><span data-ar="الكل" data-en="All">الكل</span><span class="count ltr">7</span></button>
+          <button type="button" class="chip" data-filter="restaurants" aria-pressed="false"><span data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span><span class="count ltr">4</span></button>
+          <button type="button" class="chip" data-filter="legal" aria-pressed="false"><span data-ar="مكاتب وقانونية" data-en="Legal offices">مكاتب وقانونية</span><span class="count ltr">2</span></button>
+          <button type="button" class="chip" data-filter="realty" aria-pressed="false"><span data-ar="عقارات" data-en="Real estate">عقارات</span><span class="count ltr">1</span></button>
+        </div>
+
+        <div class="cards-grid services-grid" style="align-items:stretch">
+          <!-- 01 — Al-Hamra -->
+          <article class="project-card reveal" data-category="restaurants" data-url="https://alhamraa.netlify.app/">
+            <div class="banner">
+              <img src="assets/images/cat-restaurants.jpg" alt="أطباق مشويات على مائدة مطعم" data-ar-alt="أطباق مشويات على مائدة مطعم" data-en-alt="Grilled dishes served at a restaurant table" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">01</span>
+              <span class="cat-badge" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="مشويات الحمراء" data-en="Al-Hamra Grills">مشويات الحمراء</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://alhamraa.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مشويات الحمراء في نافذة جديدة" data-ar-aria="معاينة موقع مشويات الحمراء في نافذة جديدة" data-en-aria="Preview the Al-Hamra Grills website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع مشويات الحمراء" data-ar-aria="عرض تقييم صاحب مشروع مشويات الحمراء" data-en-aria="View project owner feedback for Al-Hamra Grills"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+              <span class="d-title" data-ar="مشويات الحمراء" data-en="Al-Hamra Grills">مشويات الحمراء</span>
+              <span class="d-no ltr">01</span>
+              <span class="d-quote" data-ar="ما شاء الله، الموقع مرتب ويشرح كل شيء بطريقة واضحة، من قائمة الطعام إلى العزائم والبوفيهات. أعجبني تنوع الخيارات والأسعار المناسبة، وسهولة الوصول للطلبات والفروع. كذلك الاهتمام بالتفاصيل يعطي انطباعًا جميلًا عن المكان واحترافية في التعامل. الله يوفقكم ويرزقكم من واسع فضله ❤️" data-en="Praise be, the website is well organized and explains everything clearly — from the menu to catering orders and buffets. I liked the variety of options, the reasonable prices, and how easy it is to reach the ordering and branches. The attention to detail gives a lovely impression of the place and real professionalism. May God grant you success and abundant provision ❤️">ما شاء الله، الموقع مرتب ويشرح كل شيء بطريقة واضحة، من قائمة الطعام إلى العزائم والبوفيهات. أعجبني تنوع الخيارات والأسعار المناسبة، وسهولة الوصول للطلبات والفروع. كذلك الاهتمام بالتفاصيل يعطي انطباعًا جميلًا عن المكان واحترافية في التعامل. الله يوفقكم ويرزقكم من واسع فضله ❤️</span>
+            </div>
+          </article>
+
+          <!-- 02 — Aisha Law -->
+          <article class="project-card reveal" style="--reveal-delay:.06s" data-category="legal" data-url="https://aishalaw.netlify.app/">
+            <div class="banner">
+              <img src="assets/images/cat-legal.jpg" alt="ميزان العدالة وكتب قانونية في مكتب محاماة" data-ar-alt="ميزان العدالة وكتب قانونية في مكتب محاماة" data-en-alt="Scales of justice and law books in a law office" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">02</span>
+              <span class="cat-badge" data-ar="مكاتب وقانونية" data-en="Legal offices">مكاتب وقانونية</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="مكتب المحامية عائشة محمد الصيعري" data-en="Law Office of Aisha Mohammed Al-Sayari">مكتب المحامية عائشة محمد الصيعري</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://aishalaw.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مكتب المحامية عائشة محمد الصيعري في نافذة جديدة" data-ar-aria="معاينة موقع مكتب المحامية عائشة محمد الصيعري في نافذة جديدة" data-en-aria="Preview the Law Office of Aisha Mohammed Al-Sayari website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع مكتب المحامية عائشة" data-ar-aria="عرض تقييم صاحب مشروع مكتب المحامية عائشة" data-en-aria="View project owner feedback for the Law Office of Aisha"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="مكاتب وقانونية" data-en="Legal offices">مكاتب وقانونية</span>
+              <span class="d-title" data-ar="مكتب المحامية عائشة محمد الصيعري" data-en="Law Office of Aisha Mohammed Al-Sayari">مكتب المحامية عائشة محمد الصيعري</span>
+              <span class="d-no ltr">02</span>
+              <span class="d-quote" data-ar="أعجبني جدًا أسلوب عرض الخدمات القانونية، الموقع منظم واحترافي ويعطي شعورًا بالثقة والاطمئنان. وضوح الخدمات وسهولة التواصل والاهتمام بحقوق العملاء أمور تعطي انطباعًا إيجابيًا عن المكتب. نتمنى لكم دوام النجاح والتوفيق." data-en="I really liked the way the legal services are presented — the website is organized and professional and gives a feeling of trust and reassurance. Clear services, easy communication, and care for clients' rights all give a positive impression of the office. Wishing you continued success.">أعجبني جدًا أسلوب عرض الخدمات القانونية، الموقع منظم واحترافي ويعطي شعورًا بالثقة والاطمئنان. وضوح الخدمات وسهولة التواصل والاهتمام بحقوق العملاء أمور تعطي انطباعًا إيجابيًا عن المكتب. نتمنى لكم دوام النجاح والتوفيق.</span>
+            </div>
+          </article>
+
+          <!-- 03 — Maram -->
+          <article class="project-card reveal" style="--reveal-delay:.12s" data-category="legal" data-url="https://maramalfahmi.netlify.app">
+            <div class="banner">
+              <img src="assets/images/cat-legal.jpg" alt="ميزان العدالة وكتب قانونية في مكتب محاماة" data-ar-alt="ميزان العدالة وكتب قانونية في مكتب محاماة" data-en-alt="Scales of justice and law books in a law office" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">03</span>
+              <span class="cat-badge" data-ar="مكاتب وقانونية" data-en="Legal offices">مكاتب وقانونية</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="مكتب المحامية مرام الفهمي" data-en="Law Office of Maram Al-Fahmi">مكتب المحامية مرام الفهمي</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://maramalfahmi.netlify.app" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مكتب المحامية مرام الفهمي في نافذة جديدة" data-ar-aria="معاينة موقع مكتب المحامية مرام الفهمي في نافذة جديدة" data-en-aria="Preview the Law Office of Maram Al-Fahmi website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع مكتب المحامية مرام" data-ar-aria="عرض تقييم صاحب مشروع مكتب المحامية مرام" data-en-aria="View project owner feedback for the Law Office of Maram"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="مكاتب وقانونية" data-en="Legal offices">مكاتب وقانونية</span>
+              <span class="d-title" data-ar="مكتب المحامية مرام الفهمي" data-en="Law Office of Maram Al-Fahmi">مكتب المحامية مرام الفهمي</span>
+              <span class="d-no ltr">03</span>
+              <span class="d-quote" data-ar="بصراحة الموقع مميز واحترافي، وطريقة عرض المعلومات والخدمات واضحة جدًا. أكثر ما أعجبني سهولة التواصل وطلب الاستشارة، والاهتمام بالتفاصيل الذي يعكس الجدية والمصداقية. التعامل الراقي والوضوح من أهم الأمور التي يبحث عنها العميل. بالتوفيق لكم 🌷" data-en="Honestly, the website is distinctive and professional, and the way information and services are presented is very clear. What I liked most is how easy it is to get in touch and request a consultation, and the attention to detail that reflects seriousness and credibility. Polite handling and clarity are among the most important things a client looks for. Wishing you success 🌷">بصراحة الموقع مميز واحترافي، وطريقة عرض المعلومات والخدمات واضحة جدًا. أكثر ما أعجبني سهولة التواصل وطلب الاستشارة، والاهتمام بالتفاصيل الذي يعكس الجدية والمصداقية. التعامل الراقي والوضوح من أهم الأمور التي يبحث عنها العميل. بالتوفيق لكم 🌷</span>
+            </div>
+          </article>
+
+          <!-- 04 — Nibras -->
+          <article class="project-card reveal" style="--reveal-delay:.18s" data-category="realty" data-url="https://nebrasestate.netlify.app/">
+            <div class="banner">
+              <img src="assets/images/cat-realty.jpg" alt="شرفة عقار مطلة على أفق المدينة" data-ar-alt="شرفة عقار مطلة على أفق المدينة" data-en-alt="A real-estate terrace overlooking the city skyline" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">04</span>
+              <span class="cat-badge" data-ar="عقارات" data-en="Real estate">عقارات</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="نبراس المدينة للعقار" data-en="Nibras Al-Madinah Real Estate">نبراس المدينة للعقار</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://nebrasestate.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع نبراس المدينة للعقار في نافذة جديدة" data-ar-aria="معاينة موقع نبراس المدينة للعقار في نافذة جديدة" data-en-aria="Preview the Nibras Al-Madinah Real Estate website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع نبراس المدينة للعقار" data-ar-aria="عرض تقييم صاحب مشروع نبراس المدينة للعقار" data-en-aria="View project owner feedback for Nibras Al-Madinah Real Estate"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="عقارات" data-en="Real estate">عقارات</span>
+              <span class="d-title" data-ar="نبراس المدينة للعقار" data-en="Nibras Al-Madinah Real Estate">نبراس المدينة للعقار</span>
+              <span class="d-no ltr">04</span>
+              <span class="d-quote" data-ar="موقع جميل ومرتب، وأكثر شيء أعجبني سهولة البحث عن العقارات وإمكانية تحديد الحي والمساحة والسعر. وجود خيارات متنوعة وأسعار تناسب أكثر من ميزانية يسهل على الشخص المقارنة والاختيار. شكرًا لكم على هذا التنظيم والاهتمام، ونتمنى لكم المزيد من النجاح 👏" data-en="A beautiful, well-organized website — what I liked most is how easy it is to search for properties and narrow down by district, area, and price. Having varied options and prices that suit different budgets makes comparing and choosing easier. Thank you for this organization and care, and we wish you even more success 👏">موقع جميل ومرتب، وأكثر شيء أعجبني سهولة البحث عن العقارات وإمكانية تحديد الحي والمساحة والسعر. وجود خيارات متنوعة وأسعار تناسب أكثر من ميزانية يسهل على الشخص المقارنة والاختيار. شكرًا لكم على هذا التنظيم والاهتمام، ونتمنى لكم المزيد من النجاح 👏</span>
+            </div>
+          </article>
+
+          <!-- 05 — Naseem -->
+          <article class="project-card reveal" style="--reveal-delay:.24s" data-category="restaurants" data-url="https://nnaseemgrill.netlify.app/">
+            <div class="banner">
+              <img src="assets/images/cat-restaurants.jpg" alt="أطباق مشويات على مائدة مطعم" data-ar-alt="أطباق مشويات على مائدة مطعم" data-en-alt="Grilled dishes served at a restaurant table" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">05</span>
+              <span class="cat-badge" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="مشويات نسيم الرافدين" data-en="Naseem Al-Rafidain Grills">مشويات نسيم الرافدين</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://nnaseemgrill.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مشويات نسيم الرافدين في نافذة جديدة" data-ar-aria="معاينة موقع مشويات نسيم الرافدين في نافذة جديدة" data-en-aria="Preview the Naseem Al-Rafidain Grills website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع مشويات نسيم الرافدين" data-ar-aria="عرض تقييم صاحب مشروع مشويات نسيم الرافدين" data-en-aria="View project owner feedback for Naseem Al-Rafidain Grills"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+              <span class="d-title" data-ar="مشويات نسيم الرافدين" data-en="Naseem Al-Rafidain Grills">مشويات نسيم الرافدين</span>
+              <span class="d-no ltr">05</span>
+              <span class="d-quote" data-ar="أحب المواقع البسيطة التي توصلك للمعلومة بسرعة، وهذا الموقع فعلًا واضح وسهل الاستخدام. أعجبني تنوع قائمة الطعام والأسعار المناسبة، وكذلك سهولة الوصول إلى العنوان ووسائل التواصل. الاهتمام بالزبائن وحسن التعامل دائمًا يصنعان فرقًا كبيرًا. الله يبارك لكم في رزقكم." data-en="I love simple websites that get you to the information quickly, and this site is truly clear and easy to use. I liked the variety of the menu and the reasonable prices, as well as how easy it is to reach the address and contact channels. Caring for customers and good treatment always make a big difference. May God bless your provision.">أحب المواقع البسيطة التي توصلك للمعلومة بسرعة، وهذا الموقع فعلًا واضح وسهل الاستخدام. أعجبني تنوع قائمة الطعام والأسعار المناسبة، وكذلك سهولة الوصول إلى العنوان ووسائل التواصل. الاهتمام بالزبائن وحسن التعامل دائمًا يصنعان فرقًا كبيرًا. الله يبارك لكم في رزقكم.</span>
+            </div>
+          </article>
+
+          <!-- 06 — Just Wow -->
+          <article class="project-card reveal" style="--reveal-delay:.3s" data-category="restaurants" data-url="https://just-wow.netlify.app/">
+            <div class="banner">
+              <img src="assets/images/cat-restaurants.jpg" alt="أطباق مشويات على مائدة مطعم" data-ar-alt="أطباق مشويات على مائدة مطعم" data-en-alt="Grilled dishes served at a restaurant table" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">06</span>
+              <span class="cat-badge" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="JUST WOW – واو وبس" data-en="JUST WOW">JUST WOW – واو وبس</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://just-wow.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع JUST WOW في نافذة جديدة" data-ar-aria="معاينة موقع JUST WOW في نافذة جديدة" data-en-aria="Preview the JUST WOW website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع JUST WOW" data-ar-aria="عرض تقييم صاحب مشروع JUST WOW" data-en-aria="View project owner feedback for JUST WOW"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+              <span class="d-title" data-ar="JUST WOW – واو وبس" data-en="JUST WOW">JUST WOW – واو وبس</span>
+              <span class="d-no ltr">06</span>
+              <span class="d-quote" data-ar="واو فعلًا! تصميم شبابي ومختلف، والألوان وطريقة عرض الأصناف تعطي حماس لتجربة النكهات. الأسعار تبدو جميلة ومناسبة، والتنوع في الأصناف يعطي خيارات كثيرة. أعجبتني فكرة اختيار الخلطة حسب المزاج، لمسة إبداعية جميلة. استمروا بهذا الإبداع، ومنها للأفضل دائمًا 😍" data-en="Wow, truly! A youthful, different design — the colors and the way the items are presented make you excited to try the flavors. The prices look good and reasonable, and the variety gives plenty of options. I loved the idea of choosing your mix by mood — a beautiful creative touch. Keep up this creativity, always onward and upward 😍">واو فعلًا! تصميم شبابي ومختلف، والألوان وطريقة عرض الأصناف تعطي حماس لتجربة النكهات. الأسعار تبدو جميلة ومناسبة، والتنوع في الأصناف يعطي خيارات كثيرة. أعجبتني فكرة اختيار الخلطة حسب المزاج، لمسة إبداعية جميلة. استمروا بهذا الإبداع، ومنها للأفضل دائمًا 😍</span>
+            </div>
+          </article>
+
+          <!-- 07 — Al-Kawthar -->
+          <article class="project-card reveal" style="--reveal-delay:.36s" data-category="restaurants" data-url="https://alkawtharaden.netlify.app/">
+            <div class="banner">
+              <img src="assets/images/cat-restaurants.jpg" alt="أطباق مشويات على مائدة مطعم" data-ar-alt="أطباق مشويات على مائدة مطعم" data-en-alt="Grilled dishes served at a restaurant table" loading="lazy" width="560" height="320">
+              <span class="no-badge ltr">07</span>
+              <span class="cat-badge" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+            </div>
+            <div class="body">
+              <h3 data-ar="مطعم الكوثر للأكلات البحرية" data-en="Al-Kawthar Seafood Restaurant">مطعم الكوثر للأكلات البحرية</h3>
+              <span class="feedback-row"><span data-ar="عرض تقييم صاحب المشروع" data-en="View project owner feedback">عرض تقييم صاحب المشروع</span><svg class="icon arrow-flip" aria-hidden="true"><use href="assets/icons/sprite.svg#i-arrow-left"></use></svg></span>
+              <a class="preview-btn" href="https://alkawtharaden.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="معاينة موقع مطعم الكوثر للأكلات البحرية في نافذة جديدة" data-ar-aria="معاينة موقع مطعم الكوثر للأكلات البحرية في نافذة جديدة" data-en-aria="Preview the Al-Kawthar Seafood Restaurant website in a new tab">
+                <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+                <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+              </a>
+            </div>
+            <button class="cover-btn" type="button" aria-label="عرض تقييم صاحب مشروع مطعم الكوثر" data-ar-aria="عرض تقييم صاحب مشروع مطعم الكوثر" data-en-aria="View project owner feedback for Al-Kawthar Seafood Restaurant"></button>
+            <div class="pc-data sr-only" aria-hidden="true">
+              <span class="d-cat" data-ar="مطاعم ومشويات" data-en="Restaurants">مطاعم ومشويات</span>
+              <span class="d-title" data-ar="مطعم الكوثر للأكلات البحرية" data-en="Al-Kawthar Seafood Restaurant">مطعم الكوثر للأكلات البحرية</span>
+              <span class="d-no ltr">07</span>
+              <span class="d-quote" data-ar="ما شاء الله، موقع جميل بطابع عدني أصيل. أعجبني عرض الأكلات البحرية وتنظيم الأقسام وسهولة التواصل مع المطعم. كذلك الاهتمام بالزبائن وحسن التعامل من الأمور التي تعطي انطباعًا طيبًا وتبني الثقة. الله يبارك لكم ويوسع رزقكم ❤️" data-en="Praise be, a beautiful website with an authentic Aden character. I liked the presentation of the seafood dishes, the organized sections, and how easy it is to contact the restaurant. The care for customers and good treatment are among the things that leave a kind impression and build trust. May God bless you and expand your provision ❤️">ما شاء الله، موقع جميل بطابع عدني أصيل. أعجبني عرض الأكلات البحرية وتنظيم الأقسام وسهولة التواصل مع المطعم. كذلك الاهتمام بالزبائن وحسن التعامل من الأمور التي تعطي انطباعًا طيبًا وتبني الثقة. الله يبارك لكم ويوسع رزقكم ❤️</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact CTA ============ -->
+    <section class="section" aria-label="تواصل مع منسج" data-ar-aria="تواصل مع منسج" data-en-aria="Contact Mansaj" style="padding-top:0">
+      <div class="container">
+        <div class="cta-panel reveal">
+          <div class="bg-blueprint" aria-hidden="true"></div>
+          <h2 data-ar="جاهز تطوّر حضور مشروعك؟" data-en="Ready to develop your project's presence?">جاهز تطوّر حضور مشروعك؟</h2>
+          <p class="panel-desc" data-ar="اختر نوع الخدمة، وأخبرنا ببعض التفاصيل، وسنجهّز لك رسالة واضحة لبدء التواصل مع وكالة منسج مباشرة عبر واتساب." data-en="Pick your service type, tell us a few details, and we'll prepare a clear message to start the conversation with the Mansaj agency directly on WhatsApp.">اختر نوع الخدمة، وأخبرنا ببعض التفاصيل، وسنجهّز لك رسالة واضحة لبدء التواصل مع وكالة منسج مباشرة عبر واتساب.</p>
+          <div class="panel-actions">
+            <a href="contact.html" class="btn btn-brand btn-lg" style="border-radius:.25rem;padding-inline:1.75rem">
+              <span data-ar="أريد موقعًا مشابهًا لمشروعي" data-en="I want a similar website">أريد موقعًا مشابهًا لمشروعي</span>
+            </a>
+            <a href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer" class="btn btn-lg" style="border-radius:.25rem;border:1px solid color-mix(in srgb, var(--deep-foreground) 30%, transparent);color:var(--deep-foreground)">
+              <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+              <span data-ar="واتساب الوكالة مباشرة" data-en="WhatsApp the agency directly">واتساب الوكالة مباشرة</span>
+            </a>
+          </div>
+          <p class="panel-note" data-ar="لا تعرف أي خدمة تناسبك؟ اختر «ساعدوني في الاختيار» في نموذج الطلب." data-en="Not sure which service fits? Choose “Help me choose” in the request form.">لا تعرف أي خدمة تناسبك؟ اختر «ساعدوني في الاختيار» في نموذج الطلب.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Testimonial modal ============ -->
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="m-banner">
+        <img src="assets/images/cat-restaurants.jpg" alt="" aria-hidden="true">
+        <span class="no-badge ltr">01</span>
+        <button class="m-close" type="button" aria-label="إغلاق" data-ar-aria="إغلاق" data-en-aria="Close">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-x"></use></svg>
+        </button>
+      </div>
+      <div class="m-body">
+        <p class="m-cat">—</p>
+        <h3 id="modal-title">—</h3>
+        <p class="m-quote-label"><span data-ar="تقييم صاحب المشروع" data-en="Feedback from the project owner">تقييم صاحب المشروع</span></p>
+        <blockquote class="m-quote">—</blockquote>
+        <div class="m-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-brand-outline">
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-external-link"></use></svg>
+            <span data-ar="معاينة الموقع" data-en="Preview website">معاينة الموقع</span>
+          </a>
+          <a href="contact.html" class="btn btn-brand">
+            <span data-ar="أريد موقعًا مشابهًا لمشروعي" data-en="I want a similar website">أريد موقعًا مشابهًا لمشروعي</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-lockup">
+          <span class="logo-plate lg"><img src="assets/logos/mansaj-logo-mark.png" alt="شعار منسج الرقمية" width="44" height="44"></span>
+          <span class="brand-word">
+            <span class="brand-name" data-ar="منسج الرقمية" data-en="Mansaj Digital">منسج الرقمية</span>
+            <span class="brand-sub ltr" data-ar="Mansaj Digital" data-en="منسج الرقمية">Mansaj Digital</span>
+          </span>
+        </span>
+        <p class="tagline" data-ar="مشروعك يستحق موقعًا يعمل لأجله." data-en="Your project deserves a website that works for it.">مشروعك يستحق موقعًا يعمل لأجله.</p>
+      </div>
+
+      <nav class="footer-col" aria-label="روابط الأقسام" data-ar-aria="روابط الأقسام" data-en-aria="Section links">
+        <p class="col-title" data-ar="أقسام الموقع" data-en="Site sections">أقسام الموقع</p>
+        <ul>
+          <li><a href="index.html"><span class="dot" aria-hidden="true"></span><span data-ar="الرئيسية" data-en="Home">الرئيسية</span></a></li>
+          <li><a href="about.html"><span class="dot" aria-hidden="true"></span><span data-ar="من نحن" data-en="About">من نحن</span></a></li>
+          <li><a href="services.html"><span class="dot" aria-hidden="true"></span><span data-ar="خدماتنا" data-en="Services">خدماتنا</span></a></li>
+          <li><a href="projects.html"><span class="dot" aria-hidden="true"></span><span data-ar="أعمالنا" data-en="Work">أعمالنا</span></a></li>
+          <li><a href="contact.html"><span class="dot" aria-hidden="true"></span><span data-ar="تواصل معنا" data-en="Contact">تواصل معنا</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-col">
+        <p class="col-title" data-ar="تواصل" data-en="Contact">تواصل</p>
+        <ul class="footer-contact">
+          <li>
+            <svg class="icon icon-fill" aria-hidden="true"><use href="assets/icons/sprite.svg#i-whatsapp"></use></svg>
+            <div>
+              <p class="fc-title" data-ar="وكالة منسج الرقمية — التواصل الرسمي" data-en="Mansaj Digital Agency — Official contact">وكالة منسج الرقمية — التواصل الرسمي</p>
+              <a class="fc-phone ltr" href="https://wa.me/967770233292" target="_blank" rel="noopener noreferrer" aria-label="واتساب وكالة منسج الرقمية +967 770 233 292" data-ar-aria="واتساب وكالة منسج الرقمية +967 770 233 292" data-en-aria="WhatsApp Mansaj Digital Agency +967 770 233 292">+967 770 233 292</a>
+            </div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-phone"></use></svg>
+            <div>
+              <p class="fc-title" data-ar="اتصال مباشر" data-en="Direct call">اتصال مباشر</p>
+              <a class="fc-phone ltr" href="tel:+967770233292" aria-label="اتصال وكالة منسج الرقمية +967 770 233 292" data-ar-aria="اتصال وكالة منسج الرقمية +967 770 233 292" data-en-aria="Call Mansaj Digital Agency +967 770 233 292">+967 770 233 292</a>
+            </div>
+          </li>
+          <li>
+            <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-mail"></use></svg>
+            <div>
+              <p class="fc-title" data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</p>
+              <a class="fc-phone ltr" href="mailto:masagdigital@gmail.com" aria-label="البريد الإلكتروني لوكالة منسج الرقمية masagdigital@gmail.com" data-ar-aria="البريد الإلكتروني لوكالة منسج الرقمية masagdigital@gmail.com" data-en-aria="Email Mansaj Digital Agency masagdigital@gmail.com">masagdigital@gmail.com</a>
+            </div>
+          </li>
+        </ul>
+        <a class="footer-insta" href="https://www.instagram.com/mansagdigital/" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="assets/icons/sprite.svg#i-instagram"></use></svg>
+          <span>
+            <span class="handle ltr">@mansagdigital</span>
+            <span class="fi-sub" data-ar="الحساب الرسمي لوكالة منسج الرقمية" data-en="The official account of Mansaj Digital">الحساب الرسمي لوكالة منسج الرقمية</span>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container inner">
+        <p><span data-ar="© " data-en="© ">© </span><span data-year>2025</span><span data-ar=" وكالة منسج الرقمية — Mansaj Digital" data-en=" Mansaj Digital Agency"> وكالة منسج الرقمية — Mansaj Digital</span></p>
+        <p data-ar="صُنع بعناية من وكالة منسج" data-en="Crafted with care by Mansaj">صُنع بعناية من وكالة منسج</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/theme.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
