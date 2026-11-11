@@ -25,9 +25,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://munsajdigital.com"),
   alternates: { canonical: "/", languages: { en: "/", ar: "/ar" } },
-  title: { default: "منسج الرقمية | Mansaj Digital", template: "%s | منسج الرقمية" },
+  title: { default: "Mansaj Digital | Web Design & Development", template: "%s | Mansaj Digital" },
   description:
-    "Mansaj Digital Agency (also written Munsaj Digital) is a web design and development agency. منسج الرقمية، وكالة منسج لتصميم وتطوير مواقع الشركات والمتاجر الإلكترونية وصفحات الهبوط والمواقع الشخصية والعقارية.",
+    "Mansaj Digital is a web design and development agency building business websites, online stores, landing pages and tailored digital experiences.",
   keywords: [
     "Mansaj Digital",
     "Munsaj Digital",
