@@ -16,11 +16,11 @@ import {
 import { waLink, WA_GREETING_EN, WA_GREETING_AR } from "@/lib/whatsapp";
 
 const NAV = [
-  { href: "#home", en: "Home", ar: "الرئيسية" },
-  { href: "#services", en: "Services", ar: "الخدمات" },
-  { href: "#work", en: "Work", ar: "أعمالنا" },
-  { href: "#pricing", en: "Pricing", ar: "الباقات" },
-  { href: "#contact", en: "Contact", ar: "تواصل معنا" },
+  { href: "/", en: "Home", ar: "الرئيسية" },
+  { href: "/services", en: "Services", ar: "الخدمات" },
+  { href: "/work", en: "Work", ar: "أعمالنا" },
+  { href: "/pricing", en: "Pricing", ar: "الباقات" },
+  { href: "/contact", en: "Contact", ar: "تواصل معنا" },
 ] as const;
 
 function LangToggle({ compact = false }: { compact?: boolean }) {
@@ -102,7 +102,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-2 px-3 sm:gap-3 sm:px-6">
         {/* Brand lockup */}
         <a
-          href="#home"
+          href="/"
           className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-2.5"
           aria-label="Mansaj Digital — Home"
           data-cursor="Home"
