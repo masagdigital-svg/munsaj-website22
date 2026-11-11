@@ -15,7 +15,7 @@ function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: st
 }
 
 export const metadata: Metadata = {
-  title: "خدمات تصميم وتطوير المواقع | منسج الرقمية",
+  title: "خدمات تصميم وتطوير المواقع",
   description: "اكتشف خدمات منسج الرقمية في تصميم وتطوير مواقع الشركات والمتاجر الإلكترونية وصفحات الهبوط والمواقع العقارية والشخصية.",
   alternates: { canonical: "/services" },
   openGraph: { title: "خدمات منسج الرقمية", description: "تصميم وتطوير مواقع ومتاجر إلكترونية تناسب نشاطك." },
