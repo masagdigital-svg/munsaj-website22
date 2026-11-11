@@ -13,7 +13,6 @@ type LangContextValue = {
 };
 
 const LangContext = React.createContext<LangContextValue | null>(null);
-const STORAGE_KEY = "mansaj-lang";
 
 export function LangProvider({
   children,
@@ -25,21 +24,11 @@ export function LangProvider({
   const [lang, setLangState] = React.useState<Lang>(initialLang);
 
   React.useEffect(() => {
-    if (initialLang !== "en") return;
-    try {
-      const stored = window.localStorage.getItem(STORAGE_KEY);
-      if (stored === "ar" || stored === "en") setLangState(stored);
-    } catch {
-      /* ignore */
-    }
-  }, [initialLang]);
-
-  React.useEffect(() => {
     const root = document.documentElement;
     root.lang = lang;
     root.dir = lang === "ar" ? "rtl" : "ltr";
     try {
-      window.localStorage.setItem(STORAGE_KEY, lang);
+      window.localStorage.setItem("mansaj-lang", lang);
     } catch {
       /* ignore */
     }
