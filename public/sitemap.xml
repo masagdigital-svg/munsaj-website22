@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://munsajdigital.com/</loc></url>
-  <url><loc>https://munsajdigital.com/services</loc></url>
-  <url><loc>https://munsajdigital.com/work</loc></url>
-  <url><loc>https://munsajdigital.com/pricing</loc></url>
-  <url><loc>https://munsajdigital.com/contact</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://munsajdigital.com/</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar"/></url>
+  <url><loc>https://munsajdigital.com/ar</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar"/></url>
+  <url><loc>https://munsajdigital.com/services</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/services"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/services"/></url>
+  <url><loc>https://munsajdigital.com/ar/services</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/services"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/services"/></url>
+  <url><loc>https://munsajdigital.com/work</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/work"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/work"/></url>
+  <url><loc>https://munsajdigital.com/ar/work</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/work"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/work"/></url>
+  <url><loc>https://munsajdigital.com/pricing</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/pricing"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/pricing"/></url>
+  <url><loc>https://munsajdigital.com/ar/pricing</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/pricing"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/pricing"/></url>
+  <url><loc>https://munsajdigital.com/contact</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/contact"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/contact"/></url>
+  <url><loc>https://munsajdigital.com/ar/contact</loc><xhtml:link rel="alternate" hreflang="en" href="https://munsajdigital.com/contact"/><xhtml:link rel="alternate" hreflang="ar" href="https://munsajdigital.com/ar/contact"/></url>
 </urlset>
