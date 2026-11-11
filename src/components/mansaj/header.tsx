@@ -39,7 +39,7 @@ function LangToggle({ compact = false }: { compact?: boolean }) {
           type="button"
           onClick={() => {
             setLang(l);
-            const path = pathname.replace(/^\\/ar(?=\\/|$)/, "") || "/";
+            const path = pathname.startsWith("/ar") ? pathname.slice(3) || "/" : pathname;
             window.location.href = l === "ar" ? (path === "/" ? "/ar" : `/ar${path}`) : path;
           }}
           aria-pressed={lang === l}
