@@ -194,7 +194,7 @@ export function SiteHeader() {
                 {NAV.map((n, i) => (
                   <a
                     key={n.href}
-                    href={n.href}
+                    href={`${prefix}${n.href === "/" ? "" : n.href}` || "/"}
                     onClick={() => setOpen(false)}
                     className="flex items-center justify-between rounded-sm px-3 py-3 text-sm font-medium hover:bg-secondary"
                   >
