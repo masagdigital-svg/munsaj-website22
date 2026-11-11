@@ -73,46 +73,6 @@ export default function RootLayout({
         className={`${grotesk.variable} ${arabic.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@graph": [
-                  {
-                    "@type": "WebSite",
-                    "@id": "https://munsajdigital.com/#website",
-                    "url": "https://munsajdigital.com/",
-                    "name": "Mansaj Digital",
-                    "alternateName": [
-                      "منسج الرقمية",
-                      "Munsaj Digital",
-                      "منسج",
-                      "Mansaj",
-                      "Munsaj",
-                      "منسج ديجيتال",
-                      "munsajdigital.com"
-                    ],
-                    "publisher": { "@id": "https://munsajdigital.com/#organization" }
-                  },
-                  {
-                    "@type": "Organization",
-                    "@id": "https://munsajdigital.com/#organization",
-                    "name": "Mansaj Digital",
-                    "alternateName": [
-                      "منسج الرقمية",
-                      "Munsaj Digital",
-                      "منسج",
-                      "Mansaj",
-                      "Munsaj",
-                      "منسج ديجيتال"
-                    ],
-                    "url": "https://munsajdigital.com/"
-                  }
-                ]
-              })
-            }}
-          />
           {children}
           <Toaster />
         </ThemeProvider>
