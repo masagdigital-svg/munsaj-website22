@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import {
   Building2,
   CreditCard,
@@ -145,6 +146,29 @@ export function Services() {
             );
           })}
         </ul>
+
+        <div className="mt-10 rounded-md border border-border bg-card p-6">
+          <h3 className="text-xl font-bold">
+            {t({ en: "Explore our services in detail", ar: "اكتشف تفاصيل خدماتنا" })}
+          </h3>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              { slug: "corporate-websites", en: "Corporate website design", ar: "تصميم مواقع الشركات" },
+              { slug: "ecommerce-websites", en: "E-commerce website design", ar: "تصميم المتاجر الإلكترونية" },
+              { slug: "landing-pages", en: "Landing page design", ar: "تصميم صفحات الهبوط" },
+              { slug: "real-estate-websites", en: "Real estate website design", ar: "تصميم مواقع العقارات" },
+              { slug: "portfolio-websites", en: "Portfolio website design", ar: "تصميم المواقع الشخصية ومعارض الأعمال" },
+            ].map((item) => (
+              <Link
+                key={item.slug}
+                href={`${lang === "ar" ? "/ar" : ""}/services/${item.slug}`}
+                className="rounded-sm border border-border px-4 py-3 text-sm font-bold transition-colors hover:border-brand hover:text-brand"
+              >
+                {lang === "ar" ? item.ar : item.en} <span aria-hidden="true">↗</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
