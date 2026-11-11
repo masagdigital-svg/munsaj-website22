@@ -23,7 +23,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mansajdigital.netlify.app"),
+  metadataBase: new URL("https://munsajdigital.com"),
   title: "Mansaj Digital — Web Design & Development Agency | منسج الرقمية",
   description:
     "Mansaj Digital is a web design & development agency. We design and build websites, online stores, and digital experiences that work for your business — mobile-first, fast, and clear. / وكالة منسج الرقمية لتصميم وتطوير المواقع.",
