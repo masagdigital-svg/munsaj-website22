@@ -4,10 +4,10 @@ import { PageIntro } from "@/components/mansaj/page-intro";
 import { Pricing } from "@/components/mansaj/pricing";
 
 export const metadata: Metadata = {
-  title: "باقات تصميم المواقع والأسعار",
-  description: "قارن باقات منسج الرقمية لتصميم المواقع والمتاجر الإلكترونية، واختر الحل المناسب لمشروعك.",
+  title: "Website Design Packages & Pricing | Mansaj Digital",
+  description: "Compare Mansaj Digital packages for landing pages, business websites and e-commerce stores. Choose a plan that fits your project.",
   alternates: { canonical: "/pricing", languages: { en: "/pricing", ar: "/ar/pricing" } },
-  openGraph: { title: "باقات وأسعار منسج الرقمية", description: "باقات واضحة لتصميم المواقع والمتاجر الإلكترونية." },
+  openGraph: { title: "Website Design Packages", description: "Compare Mansaj Digital packages for landing pages, business websites and e-commerce stores. Choose a plan that fits your project." },
 };
 
 export default function PricingPage() {
