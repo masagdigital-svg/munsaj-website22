@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { ArrowUpRight, Languages, Menu, Moon, Sun } from "lucide-react";
 import { useLang } from "@/lib/lang";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -25,6 +26,7 @@ const NAV = [
 
 function LangToggle({ compact = false }: { compact?: boolean }) {
   const { lang, setLang } = useLang();
+  const pathname = usePathname();
   return (
     <div
       className="inline-flex items-center rounded-sm border border-border bg-card p-0.5"
@@ -35,7 +37,11 @@ function LangToggle({ compact = false }: { compact?: boolean }) {
         <button
           key={l}
           type="button"
-          onClick={() => setLang(l)}
+          onClick={() => {
+            setLang(l);
+            const path = pathname.replace(/^\\/ar(?=\\/|$)/, "") || "/";
+            window.location.href = l === "ar" ? (path === "/" ? "/ar" : `/ar${path}`) : path;
+          }}
           aria-pressed={lang === l}
           className={`px-2 py-1 text-xs font-bold uppercase tracking-wider transition-colors rounded-[2px] sm:px-2.5 ${
             lang === l
@@ -80,6 +86,7 @@ function ThemeToggle() {
 
 export function SiteHeader() {
   const { t, lang } = useLang();
+  const prefix = lang === "ar" ? "/ar" : "";
   const [scrolled, setScrolled] = React.useState(false);
   const [open, setOpen] = React.useState(false);
 
@@ -102,7 +109,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-2 px-3 sm:gap-3 sm:px-6">
         {/* Brand lockup */}
         <a
-          href="/"
+          href={lang === "ar" ? "/ar" : "/"}
           className="flex min-w-0 shrink-0 items-center gap-2 sm:gap-2.5"
           aria-label="Mansaj Digital — Home"
           data-cursor="Home"
@@ -131,7 +138,7 @@ export function SiteHeader() {
           {NAV.map((n) => (
             <a
               key={n.href}
-              href={n.href}
+              href={`${prefix}${n.href === "/" ? "" : n.href}` || "/"}
               className="rounded-sm px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
             >
               {t({ en: n.en, ar: n.ar })}
