@@ -4,10 +4,10 @@ import { PageIntro } from "@/components/mansaj/page-intro";
 import { Contact } from "@/components/mansaj/contact";
 
 export const metadata: Metadata = {
-  title: "تواصل مع منسج الرقمية | اطلب موقعك الآن",
-  description: "تواصل مع وكالة منسج الرقمية لمناقشة مشروعك والحصول على خطة وباقة مناسبة لتصميم موقعك أو متجرك الإلكتروني.",
+  title: "Contact Mansaj Digital | Start Your Website Project",
+  description: "Contact Mansaj Digital to discuss a business website, online store or landing page and find the right solution for your project.",
   alternates: { canonical: "/contact", languages: { en: "/contact", ar: "/ar/contact" } },
-  openGraph: { title: "تواصل مع منسج الرقمية", description: "ابدأ مشروعك الرقمي مع منسج الرقمية." },
+  openGraph: { title: "Contact Mansaj Digital", description: "Contact Mansaj Digital to discuss a business website, online store or landing page and find the right solution for your project." },
 };
 
 export default function ContactPage() {
