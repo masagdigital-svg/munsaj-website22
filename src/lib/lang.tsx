@@ -8,29 +8,32 @@ type LangContextValue = {
   lang: Lang;
   setLang: (l: Lang) => void;
   toggleLang: () => void;
-  /** Picks the correct side of a bilingual object */
   t: <T>(pair: { en: T; ar: T }) => T;
   isRtl: boolean;
 };
 
 const LangContext = React.createContext<LangContextValue | null>(null);
-
 const STORAGE_KEY = "mansaj-lang";
 
-export function LangProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLangState] = React.useState<Lang>("en");
+export function LangProvider({
+  children,
+  initialLang = "en",
+}: {
+  children: React.ReactNode;
+  initialLang?: Lang;
+}) {
+  const [lang, setLangState] = React.useState<Lang>(initialLang);
 
-  // Read persisted preference once mounted (English is the official default)
   React.useEffect(() => {
+    if (initialLang !== "en") return;
     try {
       const stored = window.localStorage.getItem(STORAGE_KEY);
       if (stored === "ar" || stored === "en") setLangState(stored);
     } catch {
       /* ignore */
     }
-  }, []);
+  }, [initialLang]);
 
-  // Keep <html> lang/dir in sync + persist
   React.useEffect(() => {
     const root = document.documentElement;
     root.lang = lang;
@@ -47,12 +50,7 @@ export function LangProvider({ children }: { children: React.ReactNode }) {
     () => setLangState((p) => (p === "en" ? "ar" : "en")),
     []
   );
-
-  const t = React.useCallback(
-    <T,>(pair: { en: T; ar: T }) => pair[lang],
-    [lang]
-  );
-
+  const t = React.useCallback(<T,>(pair: { en: T; ar: T }) => pair[lang], [lang]);
   const value = React.useMemo<LangContextValue>(
     () => ({ lang, setLang, toggleLang, t, isRtl: lang === "ar" }),
     [lang, setLang, toggleLang, t]
