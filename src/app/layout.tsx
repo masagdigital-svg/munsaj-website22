@@ -62,6 +62,28 @@ export const viewport: Viewport = {
   ],
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://munsajdigital.com/#organization",
+  name: "منسج الرقمية",
+  alternateName: ["Mansaj Digital", "Munsaj Digital", "منسج", "منسج ديجيتال"],
+  url: "https://munsajdigital.com/",
+  description:
+    "منسج الرقمية وكالة متخصصة في تصميم وتطوير المواقع الإلكترونية والحلول الرقمية.",
+};
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://munsajdigital.com/#website",
+  url: "https://munsajdigital.com/",
+  name: "منسج الرقمية",
+  alternateName: ["Mansaj Digital", "Munsaj Digital"],
+  inLanguage: ["ar", "en"],
+  publisher: { "@id": "https://munsajdigital.com/#organization" },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -73,6 +95,12 @@ export default function RootLayout({
         className={`${grotesk.variable} ${arabic.variable} ${geistMono.variable} font-sans antialiased bg-background text-foreground`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify([organizationSchema, websiteSchema]).replace(/</g, "\\u003c"),
+            }}
+          />
           {children}
           <Toaster />
         </ThemeProvider>
