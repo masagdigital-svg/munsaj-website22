@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { LangProvider, useLang } from "@/lib/lang";
+import { LangProvider, useLang, type Lang } from "@/lib/lang";
 import { CustomCursor } from "@/components/mansaj/cursor";
 import { SiteHeader } from "@/components/mansaj/header";
 import { Hero } from "@/components/mansaj/hero";
@@ -42,9 +42,9 @@ function TechStrip() {
   );
 }
 
-export function HomeContent() {
+export function HomeContent({ initialLang = "en" }: { initialLang?: Lang }) {
   return (
-    <LangProvider>
+    <LangProvider initialLang={initialLang}>
       <CustomCursor />
       <div className="flex min-h-screen flex-col">
         <SiteHeader />
