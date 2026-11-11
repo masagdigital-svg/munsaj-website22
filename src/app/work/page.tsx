@@ -6,7 +6,7 @@ import { Work } from "@/components/mansaj/work";
 export const metadata: Metadata = {
   title: "أعمالنا ومشاريعنا",
   description: "تعرّف على نماذج من المواقع التي صممتها وطورتها منسج الرقمية للشركات والأنشطة التجارية.",
-  alternates: { canonical: "/work" },
+  alternates: { canonical: "/work", languages: { en: "/work", ar: "/ar/work" } },
   openGraph: { title: "أعمال منسج الرقمية", description: "نماذج من مواقع ومشاريع منسج الرقمية." },
 };
 
