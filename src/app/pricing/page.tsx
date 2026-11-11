@@ -14,7 +14,7 @@ function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: st
 }
 
 export const metadata: Metadata = {
-  title: "باقات تصميم المواقع والأسعار | منسج الرقمية",
+  title: "باقات تصميم المواقع والأسعار",
   description: "قارن باقات منسج الرقمية لتصميم المواقع والمتاجر الإلكترونية، واختر الحل المناسب لمشروعك.",
   alternates: { canonical: "/pricing" },
   openGraph: { title: "باقات وأسعار منسج الرقمية", description: "باقات واضحة لتصميم المواقع والمتاجر الإلكترونية." },
