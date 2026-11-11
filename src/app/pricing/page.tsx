@@ -6,7 +6,7 @@ import { Pricing } from "@/components/mansaj/pricing";
 export const metadata: Metadata = {
   title: "باقات تصميم المواقع والأسعار",
   description: "قارن باقات منسج الرقمية لتصميم المواقع والمتاجر الإلكترونية، واختر الحل المناسب لمشروعك.",
-  alternates: { canonical: "/pricing" },
+  alternates: { canonical: "/pricing", languages: { en: "/pricing", ar: "/ar/pricing" } },
   openGraph: { title: "باقات وأسعار منسج الرقمية", description: "باقات واضحة لتصميم المواقع والمتاجر الإلكترونية." },
 };
 
