@@ -5,10 +5,10 @@ import { Services } from "@/components/mansaj/services";
 import { Process } from "@/components/mansaj/process";
 
 export const metadata: Metadata = {
-  title: "خدمات تصميم وتطوير المواقع",
-  description: "اكتشف خدمات منسج الرقمية في تصميم وتطوير مواقع الشركات والمتاجر الإلكترونية وصفحات الهبوط والمواقع العقارية والشخصية.",
+  title: "Mansaj Digital Website Design & Development Services",
+  description: "Explore corporate website design, online stores, landing pages, real estate websites and portfolio development by Mansaj Digital.",
   alternates: { canonical: "/services", languages: { en: "/services", ar: "/ar/services" } },
-  openGraph: { title: "خدمات منسج الرقمية", description: "تصميم وتطوير مواقع ومتاجر إلكترونية تناسب نشاطك." },
+  openGraph: { title: "Services", description: "Explore corporate website design, online stores, landing pages, real estate websites and portfolio development by Mansaj Digital." },
 };
 
 export default function ServicesPage() {
