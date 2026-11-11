@@ -6,7 +6,7 @@ import { Contact } from "@/components/mansaj/contact";
 export const metadata: Metadata = {
   title: "تواصل مع منسج الرقمية | اطلب موقعك الآن",
   description: "تواصل مع وكالة منسج الرقمية لمناقشة مشروعك والحصول على خطة وباقة مناسبة لتصميم موقعك أو متجرك الإلكتروني.",
-  alternates: { canonical: "/contact" },
+  alternates: { canonical: "/contact", languages: { en: "/contact", ar: "/ar/contact" } },
   openGraph: { title: "تواصل مع منسج الرقمية", description: "ابدأ مشروعك الرقمي مع منسج الرقمية." },
 };
 
