@@ -110,11 +110,11 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   const sections = [
-    { href: "#home", en: "Home", ar: "الرئيسية" },
-    { href: "#services", en: "Services", ar: "الخدمات" },
-    { href: "#work", en: "Work", ar: "أعمالنا" },
-    { href: "#pricing", en: "Pricing", ar: "الباقات" },
-    { href: "#contact", en: "Contact", ar: "تواصل معنا" },
+    { href: "/", en: "Home", ar: "الرئيسية" },
+    { href: "/services", en: "Services", ar: "الخدمات" },
+    { href: "/work", en: "Work", ar: "أعمالنا" },
+    { href: "/pricing", en: "Pricing", ar: "الباقات" },
+    { href: "/contact", en: "Contact", ar: "تواصل معنا" },
   ];
 
   return (
