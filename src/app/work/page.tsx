@@ -14,7 +14,7 @@ function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: st
 }
 
 export const metadata: Metadata = {
-  title: "أعمالنا ومشاريعنا | منسج الرقمية",
+  title: "أعمالنا ومشاريعنا",
   description: "تعرّف على نماذج من المواقع التي صممتها وطورتها منسج الرقمية للشركات والأنشطة التجارية.",
   alternates: { canonical: "/work" },
   openGraph: { title: "أعمال منسج الرقمية", description: "نماذج من مواقع ومشاريع منسج الرقمية." },
