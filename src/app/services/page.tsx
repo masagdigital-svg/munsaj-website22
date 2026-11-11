@@ -1,18 +1,8 @@
 import type { Metadata } from "next";
 import { PageShell } from "@/components/mansaj/page-shell";
+import { PageIntro } from "@/components/mansaj/page-intro";
 import { Services } from "@/components/mansaj/services";
 import { Process } from "@/components/mansaj/process";
-function PageIntro({ eyebrow, title, description }: { eyebrow: string; title: string; description: string }) {
-  return (
-    <section className="border-b border-border bg-muted/40 py-12 sm:py-16">
-      <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
-        <p className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-brand">{eyebrow}</p>
-        <h1 className="max-w-3xl text-balance text-3xl font-bold leading-tight sm:text-5xl">{title}</h1>
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">{description}</p>
-      </div>
-    </section>
-  );
-}
 
 export const metadata: Metadata = {
   title: "خدمات تصميم وتطوير المواقع",
@@ -20,6 +10,27 @@ export const metadata: Metadata = {
   alternates: { canonical: "/services" },
   openGraph: { title: "خدمات منسج الرقمية", description: "تصميم وتطوير مواقع ومتاجر إلكترونية تناسب نشاطك." },
 };
+
 export default function ServicesPage() {
-  return <PageShell><PageIntro eyebrow="Services / الخدمات" title="خدمات تصميم وتطوير المواقع التي يحتاجها مشروعك" description="من المواقع التعريفية إلى المتاجر الإلكترونية وصفحات الهبوط، نبني تجربة رقمية واضحة تساعد عملاءك على الوصول إليك." /><Services /><Process /></PageShell>;
+  return (
+    <PageShell>
+      <PageIntro
+        eyebrow={{ en: "Services", ar: "الخدمات" }}
+        title={{
+          en: "Website Design & Development Services for Your Business",
+          ar: "خدمات تصميم وتطوير المواقع التي يحتاجها مشروعك",
+        }}
+        description={{
+          en: "From company websites to online stores and landing pages, we build clear digital experiences that help your customers find and connect with you.",
+          ar: "من المواقع التعريفية إلى المتاجر الإلكترونية وصفحات الهبوط، نبني تجربة رقمية واضحة تساعد عملاءك على الوصول إليك.",
+        }}
+        documentTitle={{
+          en: "Website Design & Development Services",
+          ar: "خدمات تصميم وتطوير المواقع",
+        }}
+      />
+      <Services />
+      <Process />
+    </PageShell>
+  );
 }
