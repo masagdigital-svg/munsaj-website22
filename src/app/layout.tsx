@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://munsajdigital.com"),
   title: { default: "منسج الرقمية | Mansaj Digital", template: "%s | منسج الرقمية" },
   description:
-    "Mansaj Digital (also written Munsaj Digital) — منسج الرقمية، وكالة لتصميم وتطوير مواقع الشركات والمتاجر الإلكترونية وصفحات الهبوط والمواقع الشخصية والعقارية. We build clear, fast websites and online stores for businesses.",
+    "Mansaj Digital Agency (also written Munsaj Digital) is a web design and development agency. منسج الرقمية، وكالة منسج لتصميم وتطوير مواقع الشركات والمتاجر الإلكترونية وصفحات الهبوط والمواقع الشخصية والعقارية.",
   keywords: [
     "Mansaj Digital",
     "Munsaj Digital",
