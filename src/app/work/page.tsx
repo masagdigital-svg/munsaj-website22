@@ -4,10 +4,10 @@ import { PageIntro } from "@/components/mansaj/page-intro";
 import { Work } from "@/components/mansaj/work";
 
 export const metadata: Metadata = {
-  title: "أعمالنا ومشاريعنا",
-  description: "تعرّف على نماذج من المواقع التي صممتها وطورتها منسج الرقمية للشركات والأنشطة التجارية.",
+  title: "Mansaj Digital Portfolio & Website Projects",
+  description: "Explore live websites designed and developed by Mansaj Digital for restaurants, legal practices and businesses.",
   alternates: { canonical: "/work", languages: { en: "/work", ar: "/ar/work" } },
-  openGraph: { title: "أعمال منسج الرقمية", description: "نماذج من مواقع ومشاريع منسج الرقمية." },
+  openGraph: { title: "Work", description: "Explore live websites designed and developed by Mansaj Digital for restaurants, legal practices and businesses." },
 };
 
 export default function WorkPage() {
