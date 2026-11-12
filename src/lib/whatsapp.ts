@@ -5,8 +5,6 @@
 export const WHATSAPP_NUMBER = "967770233292";
 export const WHATSAPP_DISPLAY = "+967 770 233 292";
 export const AGENCY_EMAIL = "masagdigital@gmail.com";
-export const INSTAGRAM_URL = "https://www.instagram.com/mansagdigital/";
-export const INSTAGRAM_HANDLE = "@mansagdigital";
 
 /** Build a wa.me link with a pre-filled first message. */
 export function waLink(message: string): string {

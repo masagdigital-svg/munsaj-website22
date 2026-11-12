@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Instagram, Mail, MessageCircle } from "lucide-react";
+import { Mail, MessageCircle } from "lucide-react";
 import { useLang } from "@/lib/lang";
 import { Reveal } from "./reveal";
 import {
@@ -10,8 +10,6 @@ import {
   WA_GREETING_AR,
   WHATSAPP_DISPLAY,
   AGENCY_EMAIL,
-  INSTAGRAM_URL,
-  INSTAGRAM_HANDLE,
 } from "@/lib/whatsapp";
 
 function MosaicMark() {
@@ -199,17 +197,6 @@ export function SiteFooter() {
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 <span className="font-mono text-[13px]" dir="ltr">{AGENCY_EMAIL}</span>
-              </a>
-            </li>
-            <li>
-              <a
-                href={INSTAGRAM_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2.5 px-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
-              >
-                <Instagram className="h-4 w-4" aria-hidden="true" />
-                <span className="font-mono text-[13px]" dir="ltr">{INSTAGRAM_HANDLE}</span>
               </a>
             </li>
           </ul>
